@@ -1,0 +1,438 @@
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ementa — Julio's</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --accent: #c38a4b;
+        --dark: #1f1b1a;
+        --text: #3c3230;
+        --muted: #8b7a74;
+        --bg: #f8f4ef;
+        --max-width: 1100px;
+      }
+
+      html,
+      body {
+        font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      header {
+        background: rgba(248, 244, 239, 0.96);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #e1d6c9;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .nav {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.7rem;
+        letter-spacing: 0.08em;
+      }
+
+      .logo span {
+        color: var(--accent);
+      }
+
+      .back-btn {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: color 0.3s;
+      }
+
+      .back-btn:hover {
+        color: var(--accent);
+      }
+
+      main {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 3rem 1.5rem;
+      }
+
+      .section-header {
+        margin-bottom: 2.5rem;
+        text-align: center;
+      }
+
+      .section-kicker {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+        color: var(--muted);
+        margin-bottom: 0.8rem;
+      }
+
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .section-lead {
+        font-size: 0.95rem;
+        color: var(--muted);
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto 2rem;
+      }
+
+      .menu-content {
+        background: white;
+        border-radius: 1.2rem;
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+        padding: 2.5rem;
+      }
+
+      .menu-section {
+        margin-bottom: 2.5rem;
+      }
+
+      .menu-section:last-child {
+        margin-bottom: 0;
+      }
+
+      .menu-section h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        color: var(--accent);
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 0.8rem;
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.08em;
+      }
+
+      .menu-item {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 2rem;
+        align-items: baseline;
+        padding: 1rem 0;
+        border-bottom: 1px solid #ede6df;
+      }
+
+      .menu-item:last-child {
+        border-bottom: none;
+      }
+
+      .menu-item-name {
+        font-family: "Playfair Display", serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--dark);
+        margin-bottom: 0.3rem;
+      }
+
+      .menu-item-desc {
+        font-size: 0.9rem;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .menu-item-price {
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+        color: var(--accent);
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      footer {
+        border-top: 1px solid #e1d6c9;
+        padding: 1.4rem 1.5rem 1.8rem;
+        font-size: 0.8rem;
+        color: var(--muted);
+        max-width: var(--max-width);
+        margin: 3rem auto 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      footer a {
+        text-decoration: underline;
+        text-underline-offset: 0.18em;
+      }
+
+      @media (max-width: 768px) {
+        .nav {
+          padding: 1rem 1.5rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        main {
+          padding: 1.5rem 1rem;
+        }
+
+        .menu-content {
+          padding: 1.5rem;
+        }
+
+        .menu-item {
+          grid-template-columns: 1fr;
+          gap: 0.5rem;
+        }
+
+        .menu-item-price {
+          margin-top: 0.5rem;
+        }
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a href="index.html" class="back-btn">← Voltar</a>
+        <div class="logo">Julio<span>'</span>s</div>
+        <div style="width: 80px;"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section-header">
+        <div class="section-kicker">Ementa</div>
+        <h1>Descobre o Nosso Menu</h1>
+        <p class="section-lead">
+          Petiscos, pratos tradicionais e cocktails criados com paixão pela gastronomia portuguesa.
+        </p>
+      </div>
+
+      <div class="menu-content">
+        <div class="menu-section">
+          <h2>Tábuas & Petiscos</h2>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Tábua de Queijos Portugueses</div>
+              <div class="menu-item-desc">Seleção de queijos premium da região com acompanhamentos</div>
+            </div>
+            <div class="menu-item-price">16€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Tábua de Enchidos e Presunto</div>
+              <div class="menu-item-desc">Presunto Prosciutto, Alheira e Chouriço português</div>
+            </div>
+            <div class="menu-item-price">18€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Pão Torrado com Alho</div>
+              <div class="menu-item-desc">Bruschettas caseiras com alho e azeite extra virgem</div>
+            </div>
+            <div class="menu-item-price">5€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Azeitonas Mistas</div>
+              <div class="menu-item-desc">Seleção de azeitonas marinadas com ervas</div>
+            </div>
+            <div class="menu-item-price">6€</div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h2>Clássicos Portugueses</h2>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Bacalhau à Brás</div>
+              <div class="menu-item-desc">Bacalhau desfiado, batata palha e cebola roxa, com ovo a cavalo</div>
+            </div>
+            <div class="menu-item-price">14€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Sardinas Grelhadas</div>
+              <div class="menu-item-desc">Sardinas frescas grelhadas com limão e salsa</div>
+            </div>
+            <div class="menu-item-price">12€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Caldo Verde</div>
+              <div class="menu-item-desc">Sopa tradicional com caldo de carne, couve e chouriço</div>
+            </div>
+            <div class="menu-item-price">7€</div>
+          </div>
+        </div>
+
+
+        <div class="menu-section">
+          <h2>Arrozes & Mariscos</h2>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Arroz de Marisco</div>
+              <div class="menu-item-desc">Arroz cremoso com camarão, amêijoa e mexilhão (para 2)</div>
+            </div>
+            <div class="menu-item-price">28€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Arroz de Pato</div>
+              <div class="menu-item-desc">Arroz tradicional com pato confit e caldo (para 2)</div>
+            </div>
+            <div class="menu-item-price">26€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Cataplana de Marisco</div>
+              <div class="menu-item-desc">Camarão, amêijoa e mexilhão em seleção premium (para 2)</div>
+            </div>
+            <div class="menu-item-price">32€</div>
+          </div>
+        </div>
+
+
+        <div class="menu-section">
+          <h2>Carnes Lentas</h2>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Entrecosto em Tábua</div>
+              <div class="menu-item-desc">Costela grelhada lentamente, tenra e suculenta (para 2)</div>
+            </div>
+            <div class="menu-item-price">24€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Frango na Pucara</div>
+              <div class="menu-item-desc">Frango confit com batata assada e molho de vinho</div>
+            </div>
+            <div class="menu-item-price">16€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Costela do Porco Preto</div>
+              <div class="menu-item-desc">Carne de porco Ibérico grelhada, com acompanhamentos sazonais</div>
+            </div>
+            <div class="menu-item-price">22€</div>
+          </div>
+        </div>
+
+
+        <div class="menu-section">
+          <h2>Cocktails de Assinatura</h2>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Julio's Old Fashioned</div>
+              <div class="menu-item-desc">Whiskey premium, bitters, açúcar e laranja</div>
+            </div>
+            <div class="menu-item-price">10€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Lisboa Mojito</div>
+              <div class="menu-item-desc">Rum branco, açúcar, lima, hortelã fresca e água mineral</div>
+            </div>
+            <div class="menu-item-price">9€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Vinho Verde Aperitivo</div>
+              <div class="menu-item-desc">Vinho verde com espuma de limão e morangos frescos</div>
+            </div>
+            <div class="menu-item-price">8€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Sangria da Casa</div>
+              <div class="menu-item-desc">Vinho tinto, frutas sazonais e um toque de licor</div>
+            </div>
+            <div class="menu-item-price">7€ (copo) / 28€ (jarra)</div>
+          </div>
+        </div>
+
+
+        <div class="menu-section">
+          <h2>Doces da Casa</h2>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Tiramisu Tradicional</div>
+              <div class="menu-item-desc">Tiramisu caseiro com mascarpone e chocolate</div>
+            </div>
+            <div class="menu-item-price">7€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Pastéis de Nata</div>
+              <div class="menu-item-desc">3 unidades quentes, polvilhadas com canela</div>
+            </div>
+            <div class="menu-item-price">6€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Chocolate Quente com Broa</div>
+              <div class="menu-item-desc">Chocolate premium e broa de avó caseira</div>
+            </div>
+            <div class="menu-item-price">8€</div>
+          </div>
+        </div>
+
+        <!-- BEBIDAS -->
+        <div class="menu-section">
+          <h2>Bebidas</h2>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Vinhos de Portugal</div>
+              <div class="menu-item-desc">Seleção de tintos e brancos de qualidade. Consulte o sommelier</div>
+            </div>
+            <div class="menu-item-price">A partir de 5€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Cervejas Premium</div>
+              <div class="menu-item-desc">Pilsen, Weizen e Stout internacionais</div>
+            </div>
+            <div class="menu-item-price">5€ a 7€</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Café & Chá</div>
+              <div class="menu-item-desc">Espresso, Cappuccino, Chás selecionados</div>
+            </div>
+            <div class="menu-item-price">3€ a 4€</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>© Julio's Campo Pequeno, Lisboa</div>
+      <div>
+        <a href="#">Política de Privacidade</a> ·
+        <a href="#">Termos &amp; Condições</a>
+      </div>
+    </footer>
+  </body>
+</html>

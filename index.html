@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Julio's – Campo Pequeno, Lisboa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Fonts similar vibe -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f8f4ef;
+        --accent: #c38a4b;
+        --dark: #1f1b1a;
+        --text: #3c3230;
+        --muted: #8b7a74;
+        --max-width: 1100px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(248, 244, 239, 0.96);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #e1d6c9;
+      }
+
+      .nav {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 1rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.7rem;
+        letter-spacing: 0.08em;
+      }
+
+      .logo span {
+        color: var(--accent);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      .nav-links a {
+        position: relative;
+        padding-bottom: 0.2rem;
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: var(--accent);
+        transition: width 0.2s ease-out;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7rem 1.6rem;
+        border-radius: 999px;
+        border: none;
+        background: var(--accent);
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        cursor: pointer;
+        transition: transform 0.15s ease-out, box-shadow 0.15s ease-out,
+          background 0.15s ease-out;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+      }
+
+      .btn-primary:hover {
+        background: #a86f31;
+        transform: translateY(-1px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+      }
+
+      main {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 1.5rem 4rem;
+      }
+
+      /* Hero */
+
+        /* Intro hero (full-screen rotating background) */
+        .intro-hero {
+          position: relative;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          overflow: hidden;
+        }
+
+        .intro-bg {
+          position: absolute;
+          inset: 0;
+          z-index: 0;
+        }
+
+        .intro-slide {
+          position: absolute;
+          inset: 0;
+          background-size: cover;
+          background-position: center;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
+
+        .intro-content {
+          position: relative;
+          z-index: 10;
+          text-align: center;
+          padding: 2rem;
+          max-width: 1100px;
+          width: 100%;
+        }
+
+        .intro-title {
+          font-family: "Playfair Display", serif;
+          font-size: clamp(2.8rem, 8vw, 6rem);
+          line-height: 0.95;
+          letter-spacing: 0.02em;
+          text-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+          margin-bottom: 0.6rem;
+        }
+
+        .intro-sub {
+          font-size: 1rem;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: rgba(255,255,255,0.9);
+          margin-bottom: 1rem;
+        }
+
+        .intro-cta {
+          margin-top: 1rem;
+        }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+        gap: 3rem;
+        padding: 3rem 0 4rem;
+        align-items: center;
+      }
+
+      .hero-tagline {
+        font-size: 0.9rem;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 0.6rem;
+      }
+
+      .hero-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.4rem, 4vw, 3rem);
+        line-height: 1.1;
+        margin-bottom: 1.2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+        max-width: 26rem;
+        margin-bottom: 1.8rem;
+        color: var(--muted);
+      }
+
+      .hero-meta {
+        margin-top: 1.4rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--muted);
+      }
+
+      .hero-meta span {
+        display: inline-block;
+        margin-right: 1.2rem;
+      }
+
+      .hero-photo-grid {
+        border-radius: 1.8rem;
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: 2fr 1.4fr;
+        gap: 0.5rem;
+        box-shadow: 0 24px 40px rgba(0, 0, 0, 0.25);
+      }
+
+      .hero-main-photo {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-main-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.04);
+      }
+
+      .hero-strip {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+      }
+
+      .hero-strip img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.96);
+      }
+
+      /* Section titles */
+
+      .section {
+        padding: 3rem 0;
+        border-top: 1px solid #e1d6c9;
+      }
+
+      .section-header {
+        margin-bottom: 1.8rem;
+      }
+
+      .section-kicker {
+        font-size: 0.75rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 0.3rem;
+      }
+
+      .section-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.7rem;
+      }
+
+      .section-lead {
+        font-size: 0.95rem;
+        max-width: 32rem;
+        color: var(--muted);
+        margin-top: 0.5rem;
+      }
+
+      /* About / Owner */
+
+      .about-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.9fr);
+        gap: 2.5rem;
+        align-items: start;
+      }
+
+      .about-text p {
+        margin-bottom: 1rem;
+        font-size: 0.98rem;
+      }
+
+      .owner-card {
+        background: white;
+        padding: 1.8rem 1.6rem;
+        border-radius: 1.4rem;
+        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.16);
+      }
+
+      .owner-label {
+        font-size: 0.75rem;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 0.5rem;
+      }
+
+      .owner-name {
+        font-family: "Playfair Display", serif;
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .owner-role {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        margin-bottom: 0.8rem;
+        color: var(--muted);
+      }
+
+      .owner-card p {
+        font-size: 0.92rem;
+      }
+
+      /* Gallery */
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 1rem;
+      }
+
+      .gallery-item {
+        border-radius: 1.3rem;
+        overflow: hidden;
+        background: #f0e5d6;
+        position: relative;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.35s ease-out;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .gallery-caption {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 0.6rem 0.9rem;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+        color: #fff;
+        font-size: 0.85rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      /* Events */
+
+      .events-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.4rem;
+      }
+
+      .event-card {
+        background: white;
+        border-radius: 1.4rem;
+        padding: 1.4rem 1.3rem 1.6rem;
+        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.12);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .event-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.1rem;
+      }
+
+      .event-meta {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: var(--muted);
+      }
+
+      .event-card p {
+        font-size: 0.92rem;
+        margin-top: 0.2rem;
+      }
+
+      /* Reservations */
+
+      .reservations-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .reservation-cards {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .reservation-card {
+        background: white;
+        border-radius: 1.2rem;
+        padding: 1.2rem 1.3rem;
+        box-shadow: 0 14px 24px rgba(0, 0, 0, 0.12);
+      }
+
+      .reservation-card h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-bottom: 0.4rem;
+      }
+
+      .reservation-card p {
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      .reservation-form-card {
+        background: white;
+        border-radius: 1.4rem;
+        padding: 1.8rem 1.6rem;
+        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.14);
+      }
+
+      .reservation-form-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.35rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .reservation-form-card > p {
+        font-size: 0.92rem;
+        color: var(--muted);
+        margin-bottom: 1.4rem;
+      }
+
+      .reservation-form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem 1.2rem;
+      }
+
+      .form-field {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+      }
+
+      .form-field label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: var(--muted);
+      }
+
+      .form-field input {
+        width: 100%;
+        padding: 0.65rem 0.85rem;
+        border: 1px solid #e1d6c9;
+        border-radius: 0.7rem;
+        font: inherit;
+        font-size: 0.95rem;
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      .form-field input:focus {
+        outline: 2px solid rgba(195, 138, 75, 0.35);
+        border-color: var(--accent);
+      }
+
+      .form-field-full {
+        grid-column: 1 / -1;
+      }
+
+      .reservation-form-actions {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        align-items: center;
+        margin-top: 0.3rem;
+      }
+
+      .btn-whatsapp {
+        background: #25d366;
+        box-shadow: 0 8px 18px rgba(37, 211, 102, 0.28);
+      }
+
+      .btn-whatsapp:hover {
+        background: #1ebe57;
+      }
+
+      .reservation-form-note {
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+
+      @media (max-width: 650px) {
+        .reservation-form {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Visit us */
+
+      .visit-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        gap: 2rem;
+        align-items: start;
+      }
+
+      .visit-block h3 {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-bottom: 0.2rem;
+      }
+
+      .visit-block p {
+        font-size: 0.92rem;
+        color: var(--muted);
+        margin-bottom: 0.6rem;
+      }
+
+      .visit-map {
+        border-radius: 1.4rem;
+        overflow: hidden;
+        background: #ddd;
+        min-height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        color: #666;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .visit-map #visit-map-map {
+        width: 100%;
+        height: 100%;
+        min-height: 220px;
+      }
+
+      .menu-section {
+        margin-bottom: 2.2rem;
+      }
+
+      .menu-section h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.3rem;
+        color: var(--accent);
+        margin-bottom: 1.2rem;
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 0.6rem;
+      }
+
+      .menu-items {
+        display: grid;
+        gap: 1.4rem;
+      }
+
+      .menu-item {
+        border-left: 3px solid var(--accent);
+        padding-left: 1.2rem;
+      }
+
+      .menu-item-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--dark);
+        margin-bottom: 0.3rem;
+      }
+
+      .menu-item-desc {
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin-bottom: 0.4rem;
+        line-height: 1.5;
+      }
+
+      .menu-item-price {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      footer {
+        border-top: 1px solid #e1d6c9;
+        padding: 1.4rem 1.5rem 1.8rem;
+        font-size: 0.8rem;
+        color: var(--muted);
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      footer a {
+        text-decoration: underline;
+        text-underline-offset: 0.18em;
+      }
+
+      @media (max-width: 850px) {
+        .hero,
+        .about-layout,
+        .reservations-layout,
+        .visit-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          padding-top: 2rem;
+        }
+
+        .hero-photo-grid {
+          order: -1;
+        }
+
+        .nav-links {
+          display: none; /* keep it simple for mobile */
+        }
+      }
+    </style>
+    <!-- Leaflet CSS (maps) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <!-- Intro: prominent restaurant name with rotating background -->
+    <section class="intro-hero" aria-label="Julio's — hero">
+      <div class="intro-bg" id="intro-bg">
+        <!-- JS will create crossfading slides here -->
+      </div>
+      <div class="intro-content">
+        <div class="intro-sub">Campo Pequeno · Lisboa</div>
+        <h1 class="intro-title">Julio's</h1>
+        <div class="intro-cta">
+          <a href="#reservas" class="btn-primary">Reservar mesa</a>
+        </div>
+      </div>
+    </section>
+    <header>
+      <div class="nav">
+        <div class="logo">Julio<span>'</span>s</div>
+        <nav class="nav-links">
+          <a href="#about">Sobre</a>
+          <a href="#gallery">Sabores</a>
+          <a href="#events">Eventos</a>
+          <a href="menu.html">Ementa</a>
+          <a href="#reservas">Reservas</a>
+          <a href="#visit">Visita-nos</a>
+        </nav>
+        <a href="#reservas" class="btn-primary">Reservas</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div>
+          <div class="hero-tagline">Lisboa · Campo Pequeno</div>
+          <h1 class="hero-title">Senta-te.<br />O resto é com o Julio's.</h1>
+          <p class="hero-subtitle">
+            Um espaço acolhedor, multicultural e cheio de autenticidade — onde cada cliente é recebido como um amigo e cada refeição é uma experiência para recordar.
+          </p>
+          <a href="#reservas" class="btn-primary">Reservar mesa</a>
+          <div class="hero-meta">
+            <span>COZINHA PORTUGUESA</span>
+            <span>TAPAS &amp; INTERNACIONAL</span>
+            <span>CONVÍVIO &amp; CULTURA</span>
+          </div>
+        </div>
+
+        <div class="hero-photo-grid">
+          <div class="hero-main-photo">
+            <!-- big hero photo (from available images) -->
+            <img
+              src="img/IMG_20260221_204051.png"
+              alt="Mesa de petiscos no Julio's"
+            />
+          </div>
+          <div class="hero-strip">
+            <img src="img/IMG-20251221-WA0004.jpg" alt="Tábuas de enchidos" />
+            <img src="img/IMG-20251221-WA0006.jpg" alt="Arroz de marisco" />
+            <img src="img/IMG-20251221-WA0003.jpg" alt="Cocktail no bar" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT + OWNER -->
+      <section id="about" class="section">
+        <div class="section-header">
+          <div class="section-kicker">Sobre Julio's</div>
+          <h2 class="section-title">Uma história de paixão e partilha</h2>
+          <p class="section-lead">
+            Muito mais do que um restaurante, o Julio's é um espaço de convívio e cultura — onde cada visita é uma memória e cada cliente parte da nossa história.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-text">
+            <p>
+              O Julio's nasceu da paixão pela gastronomia, pelas pessoas e pelas experiências que unem culturas à mesa. Fundado por Julio, que passou a sua infância em Tavira, no Algarve, o restaurante carrega consigo uma história de vida marcada por mais de três décadas dedicadas ao mundo da restauração e da cozinha internacional.
+            </p>
+            <p>
+              Ao longo da sua trajetória, Julio viajou por vários países da América, Europa e África, onde teve a oportunidade de descobrir sabores, técnicas e tradições gastronómicas únicas. Cada experiência contribuiu para criar a identidade do Julio's: um espaço acolhedor, multicultural e cheio de autenticidade, onde cada cliente é recebido como um amigo e tratado como parte da família.
+            </p>
+            <p>
+              Há 14 anos, Lisboa tornou-se o local escolhido para construir uma nova vida e um novo projeto. Foi aí que nasceu o primeiro Julio's, um restaurante criado com dedicação, espírito familiar e o objetivo de proporcionar momentos especiais através da comida, da música e da partilha. Com o passar dos anos, o restaurante cresceu, conquistou clientes de várias nacionalidades e tornou-se um ponto de encontro para a comunidade local e internacional.
+            </p>
+            <p>
+              Hoje, o Julio's continua a expandir a sua história com a abertura de um novo espaço em Lagos, mantendo a mesma essência que o tornou especial desde o primeiro dia: boa comida, ambiente descontraído e experiências memoráveis.
+            </p>
+          </div>
+
+          <!-- Only the owner – no staff list -->
+          <aside class="owner-card">
+            <div class="owner-label">O Fundador</div>
+            <div class="owner-name">Julio</div>
+            <div class="owner-role">Fundador de Julio's · Tavira, Algarve</div>
+            <p>
+              Infância em Tavira, mais de três décadas na restauração e uma vida de viagens pela América, Europa e África — cada paragem deixou uma marca na cozinha e no espírito do Julio's. Seja em Lisboa ou em Lagos, todos são bem-vindos à família Julio's.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="section">
+        <div class="section-header">
+          <div class="section-kicker">Sabores que falam por si</div>
+          <h2 class="section-title">Do petisco ao prato internacional</h2>
+          <p class="section-lead">
+            A carta combina sabores tradicionais portugueses, tapas e pratos internacionais cuidadosamente preparados para agradar a todos os gostos e celebrar a diversidade cultural que define o espírito do Julio's.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img
+              src="img/IMG-20251221-WA0000.jpg"
+              alt="Tábua de queijos e enchidos"
+            />
+            <figcaption class="gallery-caption">
+              Tábuas &amp; Petiscos
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/IMG-20251221-WA0004.jpg" alt="Prato de bacalhau" />
+            <figcaption class="gallery-caption">
+              Clássicos Portugueses
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/IMG-20251221-WA0006.jpg" alt="Arroz de marisco" />
+            <figcaption class="gallery-caption">
+              Arrozes &amp; Mariscos
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/IMG-20251221-WA0012.jpg" alt="Entrecosto na tábua" />
+            <figcaption class="gallery-caption">Carnes Lentas</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/IMG-20251221-WA0001.jpg" alt="Mesa para eventos" />
+            <figcaption class="gallery-caption">
+              Eventos &amp; Grupos
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/IMG-20251221-WA0002.jpg" alt="Cocktail no balcão" />
+            <figcaption class="gallery-caption">
+              Cocktails de Assinatura
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/IMG-20251221-WA0003.jpg" alt="Tiramisu" />
+            <figcaption class="gallery-caption">Doces da Casa</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- EVENTS -->
+      <section id="events" class="section">
+        <div class="section-header">
+          <div class="section-kicker">Eventos</div>
+          <h2 class="section-title">Convívio e cultura à mesa</h2>
+          <p class="section-lead">
+            Além da cozinha portuguesa e internacional, oferecemos diariamente atividades que aproximam pessoas de diferentes partes do mundo — boa comida, música e partilha num ambiente descontraído.
+          </p>
+        </div>
+
+        <div class="events-grid">
+          <article class="event-card">
+            <div class="event-meta">Semanal</div>
+            <h3 class="event-title">Noites de Karaoke</h3>
+            <p>
+              Canta, ri e partilha a mesa com amigos e desconhecidos que se tornam família. Uma noite leve, multicultural e cheia de boa energia — à moda do Julio's.
+            </p>
+          </article>
+
+          <article class="event-card">
+            <div class="event-meta">Semanal · Quinta-feira</div>
+            <h3 class="event-title">Quizzes em Várias Línguas</h3>
+            <p>
+              Joga connosco enquanto disfrutas de petiscos e bebidas. Quizzes em várias línguas que unem pessoas de diferentes nacionalidades numa competição amigável e cheia de gargalhadas.
+            </p>
+          </article>
+
+          <article class="event-card">
+            <div class="event-meta">Semanal · Domingo</div>
+            <h3 class="event-title">Jogos de Tabuleiro</h3>
+            <p>
+              Escolhe um jogo, reúne-te com os teus amigos e passa uma tarde ou noite de pura diversão, com snacks, bebidas e o ambiente acolhedor que define o Julio's.
+            </p>
+          </article>
+
+          <article class="event-card">
+            <div class="event-meta">Por marcação</div>
+            <h3 class="event-title">Eventos Privados &amp; Grupos</h3>
+            <p>
+              Planeia o teu evento connosco. Desde reuniões até celebrações, oferecemos espaço acolhedor, menu personalizável e atendimento dedicado para tornar a tua ocasião inesquecível.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- RESERVATIONS -->
+      <section id="reservas" class="section">
+        <div class="section-header">
+          <div class="section-kicker">Reservas</div>
+          <h2 class="section-title">Reserva a tua mesa</h2>
+          <p class="section-lead">
+            Preenche os dados abaixo e envia o pedido diretamente por WhatsApp. Confirmamos a disponibilidade o mais rápido possível.
+          </p>
+        </div>
+
+        <div class="reservation-form-card">
+          <h3>Pedido de reserva</h3>
+          <p>Indica a data, hora e número de pessoas. Para grupos com mais de 10 pessoas, menciona-o na mensagem.</p>
+
+          <form class="reservation-form" id="reservation-form">
+            <div class="form-field">
+              <label for="res-name">Nome</label>
+              <input type="text" id="res-name" name="name" required autocomplete="name" placeholder="O teu nome" />
+            </div>
+            <div class="form-field">
+              <label for="res-phone">Telefone</label>
+              <input type="tel" id="res-phone" name="phone" required autocomplete="tel" placeholder="+351 900 000 000" />
+            </div>
+            <div class="form-field">
+              <label for="res-date">Data</label>
+              <input type="date" id="res-date" name="date" required />
+            </div>
+            <div class="form-field">
+              <label for="res-time">Hora</label>
+              <input type="time" id="res-time" name="time" required />
+            </div>
+            <div class="form-field form-field-full">
+              <label for="res-guests">Número de pessoas</label>
+              <input type="number" id="res-guests" name="guests" min="1" max="50" required placeholder="Ex.: 4" />
+            </div>
+            <div class="reservation-form-actions">
+              <button type="submit" class="btn-primary btn-whatsapp">Enviar por WhatsApp</button>
+              <span class="reservation-form-note">Serás redirecionado para o WhatsApp com a mensagem pronta.</span>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- VISIT US -->
+      <section id="visit" class="section">
+        <div class="section-header">
+          <div class="section-kicker">Visita-nos</div>
+          <h2 class="section-title">Julio's · Campo Pequeno</h2>
+        </div>
+
+        <div class="visit-grid">
+          <div>
+            <div class="visit-block">
+              <h3>Morada</h3>
+              <p>
+                Avenida Elias Garcia, 19B<br />
+                1000-147 Lisboa · Campo Pequeno<br />
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=38.7394912,-9.1441767"
+                  target="_blank"
+                  >Como chegar</a
+                >
+              </p>
+            </div>
+
+            <div class="visit-block">
+              <h3>Horário</h3>
+              <p>
+                Segunda a Sexta: 12h00–00h00<br />
+                Sábado: 18h00–00h00<br />
+                Domingo: Encerrado
+              </p>
+            </div>
+
+            <div class="visit-block">
+              <h3>Contacto</h3>
+              <p>
+                <a href="tel:+351916475896">+351 916 475 896</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="visit-map" id="visit-map">
+            <!-- Interactive map (Leaflet) -->
+            <div
+              id="visit-map-map"
+              aria-label="Mapa — Julio's em Campo Pequeno"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MENU -->
+      <section id="ementa" class="section">
+        <div class="section-header">
+          <div class="section-kicker">Ementa</div>
+          <h2 class="section-title">Descobre a nossa gastronomia</h2>
+          <p class="section-lead">
+            Sabores tradicionais portugueses, tapas e pratos internacionais — explora a carta completa e descobre o que torna cada refeição no Julio's uma experiência para recordar.
+          </p>
+        </div>
+        <div style="max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem 1rem; text-align: center;">
+          <a href="menu.html" class="btn-primary">Consultar Ementa</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© Julio's · Lisboa &amp; Lagos</div>
+      <div>
+        <a href="#">Política de Privacidade</a> ·
+        <a href="#">Termos &amp; Condições</a>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var WHATSAPP_NUMBER = '351916475896';
+        var form = document.getElementById('reservation-form');
+        if (!form) return;
+
+        var dateInput = document.getElementById('res-date');
+        if (dateInput) {
+          var today = new Date();
+          dateInput.min = today.toISOString().split('T')[0];
+        }
+
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          var name = document.getElementById('res-name').value.trim();
+          var phone = document.getElementById('res-phone').value.trim();
+          var date = document.getElementById('res-date').value;
+          var time = document.getElementById('res-time').value;
+          var guests = document.getElementById('res-guests').value.trim();
+
+          var formattedDate = date;
+          if (date) {
+            var parts = date.split('-');
+            if (parts.length === 3) {
+              formattedDate = parts[2] + '/' + parts[1] + '/' + parts[0];
+            }
+          }
+
+          var message =
+            'Olá! Gostaria de fazer uma reserva no Julio\'s.\n\n' +
+            'Nome: ' + name + '\n' +
+            'Telefone: ' + phone + '\n' +
+            'Data: ' + formattedDate + '\n' +
+            'Hora: ' + time + '\n' +
+            'Número de pessoas: ' + guests;
+
+          var url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message);
+          window.open(url, '_blank', 'noopener');
+        });
+      })();
+    </script>
+
+    <!-- Leaflet JS -->
+    <script>
+      (function () {
+        var images = [
+          'img/IMG_20260221_204051.png',
+          'img/IMG_20260221_203939.png',
+          'img/IMG_20260221_200724.png'
+        ];
+
+        var container = document.getElementById('intro-bg');
+        if (!container) return;
+
+        // Create two slides for crossfade
+        container.innerHTML = '<div class="intro-slide" id="slideA"></div><div class="intro-slide" id="slideB"></div>';
+        var a = document.getElementById('slideA');
+        var b = document.getElementById('slideB');
+
+        function preload(src) { var i = new Image(); i.src = src; }
+        images.forEach(preload);
+
+        var current = 0;
+        a.style.backgroundImage = "url('" + images[0] + "')";
+        a.style.opacity = 1;
+
+        setInterval(function () {
+          var next = (current + 1) % images.length;
+          var incoming = (current % 2 === 0) ? b : a;
+          var outgoing = (current % 2 === 0) ? a : b;
+          incoming.style.backgroundImage = "url('" + images[next] + "')";
+          incoming.style.opacity = 1;
+          outgoing.style.opacity = 0;
+          current = next;
+        }, 4500);
+      })();
+    </script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      (function () {
+        // Coordinates: Avenida Elias Garcia 19B, Campo Pequeno (OSM Nominatim)
+        var lat = 38.7394912,
+          lng = -9.1441767;
+
+        var map = L.map("visit-map-map", { scrollWheelZoom: false }).setView(
+          [lat, lng],
+          18
+        );
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19,
+          attribution: "&copy; OpenStreetMap contributors",
+        }).addTo(map);
+
+        var marker = L.marker([lat, lng])
+          .addTo(map)
+          .bindPopup(
+            '<strong>Julio\'s</strong><br>Avenida Elias Garcia, 19B, 1000-147 Lisboa<br><a href="https://www.google.com/maps/search/?api=1&query=38.7394912,-9.1441767" target="_blank">Como chegar</a>'
+          )
+          .openPopup();
+      })();
+    </script>
+  </body>
+</html>
