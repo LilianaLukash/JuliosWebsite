@@ -2,8 +2,46 @@
 <html lang="pt">
   <head>
     <meta charset="UTF-8" />
-    <title>Julio's – Campo Pequeno, Lisboa</title>
+    <title>Julio's – Restaurante em Campo Pequeno, Lisboa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      id="meta-description"
+      content="Julio's em Campo Pequeno, Lisboa — cozinha portuguesa, tapas e pratos internacionais. Reserva mesa, descobre a ementa e vive noites de karaoke, quizzes e convívio multicultural."
+    />
+    <meta
+      name="keywords"
+      id="meta-keywords"
+      content="Julio's, restaurante Lisboa, Campo Pequeno, cozinha portuguesa, tapas, petiscos, restaurante internacional, reservas, Avenida Elias Garcia"
+    />
+    <meta name="author" content="Julio's" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#c38a4b" />
+    <link rel="canonical" id="canonical-link" href="https://lilianalukash.github.io/JuliosWebsite/" />
+    <link rel="alternate" hreflang="pt" href="https://lilianalukash.github.io/JuliosWebsite/?lang=pt" />
+    <link rel="alternate" hreflang="en" href="https://lilianalukash.github.io/JuliosWebsite/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://lilianalukash.github.io/JuliosWebsite/?lang=pt" />
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:site_name" content="Julio's" />
+    <meta property="og:title" id="og-title" content="Julio's – Restaurante em Campo Pequeno, Lisboa" />
+    <meta
+      property="og:description"
+      id="og-description"
+      content="Julio's em Campo Pequeno, Lisboa — cozinha portuguesa, tapas e pratos internacionais. Reserva mesa e descobre a nossa ementa."
+    />
+    <meta property="og:url" content="https://lilianalukash.github.io/JuliosWebsite/" />
+    <meta property="og:image" content="https://lilianalukash.github.io/JuliosWebsite/img/IMG_20260221_204051.png" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="twitter-title" content="Julio's – Restaurante em Campo Pequeno, Lisboa" />
+    <meta
+      name="twitter:description"
+      id="twitter-description"
+      content="Julio's em Campo Pequeno, Lisboa — cozinha portuguesa, tapas e pratos internacionais."
+    />
+    <meta name="twitter:image" content="https://lilianalukash.github.io/JuliosWebsite/img/IMG_20260221_204051.png" />
+    <script type="application/ld+json" id="schema-restaurant"></script>
     <!-- Fonts similar vibe -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap"
@@ -97,6 +135,42 @@
 
       .nav-links a:hover::after {
         width: 100%;
+      }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .lang-switcher {
+        display: inline-flex;
+        border: 1px solid #e1d6c9;
+        border-radius: 999px;
+        overflow: hidden;
+        background: white;
+      }
+
+      .lang-btn {
+        border: none;
+        background: transparent;
+        color: var(--muted);
+        font: inherit;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        padding: 0.45rem 0.65rem;
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease;
+      }
+
+      .lang-btn.active {
+        background: var(--accent);
+        color: white;
+      }
+
+      .lang-btn:hover:not(.active) {
+        color: var(--text);
       }
 
       .btn-primary {
@@ -660,6 +734,15 @@
         .nav-links {
           display: none; /* keep it simple for mobile */
         }
+
+        .nav-actions {
+          gap: 0.5rem;
+        }
+
+        .nav-actions .btn-primary {
+          padding: 0.6rem 1rem;
+          font-size: 0.78rem;
+        }
       }
     </style>
     <!-- Leaflet CSS (maps) -->
@@ -668,17 +751,17 @@
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     />
   </head>
-  <body>
+  <body data-page="index">
     <!-- Intro: prominent restaurant name with rotating background -->
-    <section class="intro-hero" aria-label="Julio's — hero">
+    <section class="intro-hero" data-i18n-aria="intro.aria">
       <div class="intro-bg" id="intro-bg">
         <!-- JS will create crossfading slides here -->
       </div>
       <div class="intro-content">
-        <div class="intro-sub">Campo Pequeno · Lisboa</div>
+        <div class="intro-sub" data-i18n="intro.location">Campo Pequeno · Lisboa</div>
         <h1 class="intro-title">Julio's</h1>
         <div class="intro-cta">
-          <a href="#reservas" class="btn-primary">Reservar mesa</a>
+          <a href="#reservas" class="btn-primary" data-i18n="intro.cta">Reservar mesa</a>
         </div>
       </div>
     </section>
@@ -686,14 +769,20 @@
       <div class="nav">
         <div class="logo">Julio<span>'</span>s</div>
         <nav class="nav-links">
-          <a href="#about">Sobre</a>
-          <a href="#gallery">Sabores</a>
-          <a href="#events">Eventos</a>
-          <a href="menu.html">Ementa</a>
-          <a href="#reservas">Reservas</a>
-          <a href="#visit">Visita-nos</a>
+          <a href="#about" data-i18n="nav.about">Sobre</a>
+          <a href="#gallery" data-i18n="nav.gallery">Sabores</a>
+          <a href="#events" data-i18n="nav.events">Eventos</a>
+          <a href="menu.html" data-i18n="nav.menu">Ementa</a>
+          <a href="#reservas" data-i18n="nav.reservations">Reservas</a>
+          <a href="#visit" data-i18n="nav.visit">Visita-nos</a>
         </nav>
-        <a href="#reservas" class="btn-primary">Reservas</a>
+        <div class="nav-actions">
+          <div class="lang-switcher" role="group" aria-label="Language">
+            <button type="button" class="lang-btn active" data-lang="pt" aria-pressed="true">PT</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <a href="#reservas" class="btn-primary" data-i18n="nav.reservations">Reservas</a>
+        </div>
       </div>
     </header>
 
@@ -701,31 +790,31 @@
       <!-- HERO -->
       <section class="hero">
         <div>
-          <div class="hero-tagline">Lisboa · Campo Pequeno</div>
-          <h1 class="hero-title">Senta-te.<br />O resto é com o Julio's.</h1>
-          <p class="hero-subtitle">
+          <div class="hero-tagline" data-i18n="hero.tagline">Lisboa · Campo Pequeno</div>
+          <h1 class="hero-title" data-i18n-html="hero.title">Senta-te.<br />O resto é com o Julio's.</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
             Um espaço acolhedor, multicultural e cheio de autenticidade — onde cada cliente é recebido como um amigo e cada refeição é uma experiência para recordar.
           </p>
-          <a href="#reservas" class="btn-primary">Reservar mesa</a>
+          <a href="#reservas" class="btn-primary" data-i18n="hero.cta">Reservar mesa</a>
           <div class="hero-meta">
-            <span>COZINHA PORTUGUESA</span>
-            <span>TAPAS &amp; INTERNACIONAL</span>
-            <span>CONVÍVIO &amp; CULTURA</span>
+            <span data-i18n="hero.meta1">COZINHA PORTUGUESA</span>
+            <span data-i18n="hero.meta2">TAPAS &amp; INTERNACIONAL</span>
+            <span data-i18n="hero.meta3">CONVÍVIO &amp; CULTURA</span>
           </div>
         </div>
 
         <div class="hero-photo-grid">
           <div class="hero-main-photo">
-            <!-- big hero photo (from available images) -->
             <img
               src="img/IMG_20260221_204051.png"
+              data-i18n-alt="hero.img.main"
               alt="Mesa de petiscos no Julio's"
             />
           </div>
           <div class="hero-strip">
-            <img src="img/IMG-20251221-WA0004.jpg" alt="Tábuas de enchidos" />
-            <img src="img/IMG-20251221-WA0006.jpg" alt="Arroz de marisco" />
-            <img src="img/IMG-20251221-WA0003.jpg" alt="Cocktail no bar" />
+            <img src="img/IMG-20251221-WA0004.jpg" data-i18n-alt="hero.img1" alt="Tábuas de enchidos" />
+            <img src="img/IMG-20251221-WA0006.jpg" data-i18n-alt="hero.img2" alt="Arroz de marisco" />
+            <img src="img/IMG-20251221-WA0003.jpg" data-i18n-alt="hero.img3" alt="Cocktail no bar" />
           </div>
         </div>
       </section>
@@ -733,35 +822,34 @@
       <!-- ABOUT + OWNER -->
       <section id="about" class="section">
         <div class="section-header">
-          <div class="section-kicker">Sobre Julio's</div>
-          <h2 class="section-title">Uma história de paixão e partilha</h2>
-          <p class="section-lead">
+          <div class="section-kicker" data-i18n="about.kicker">Sobre Julio's</div>
+          <h2 class="section-title" data-i18n="about.title">Uma história de paixão e partilha</h2>
+          <p class="section-lead" data-i18n="about.lead">
             Muito mais do que um restaurante, o Julio's é um espaço de convívio e cultura — onde cada visita é uma memória e cada cliente parte da nossa história.
           </p>
         </div>
 
         <div class="about-layout">
           <div class="about-text">
-            <p>
+            <p data-i18n="about.p1">
               O Julio's nasceu da paixão pela gastronomia, pelas pessoas e pelas experiências que unem culturas à mesa. Fundado por Julio, que passou a sua infância em Tavira, no Algarve, o restaurante carrega consigo uma história de vida marcada por mais de três décadas dedicadas ao mundo da restauração e da cozinha internacional.
             </p>
-            <p>
+            <p data-i18n="about.p2">
               Ao longo da sua trajetória, Julio viajou por vários países da América, Europa e África, onde teve a oportunidade de descobrir sabores, técnicas e tradições gastronómicas únicas. Cada experiência contribuiu para criar a identidade do Julio's: um espaço acolhedor, multicultural e cheio de autenticidade, onde cada cliente é recebido como um amigo e tratado como parte da família.
             </p>
-            <p>
+            <p data-i18n="about.p3">
               Há 14 anos, Lisboa tornou-se o local escolhido para construir uma nova vida e um novo projeto. Foi aí que nasceu o primeiro Julio's, um restaurante criado com dedicação, espírito familiar e o objetivo de proporcionar momentos especiais através da comida, da música e da partilha. Com o passar dos anos, o restaurante cresceu, conquistou clientes de várias nacionalidades e tornou-se um ponto de encontro para a comunidade local e internacional.
             </p>
-            <p>
+            <p data-i18n="about.p4">
               Hoje, o Julio's continua a expandir a sua história com a abertura de um novo espaço em Lagos, mantendo a mesma essência que o tornou especial desde o primeiro dia: boa comida, ambiente descontraído e experiências memoráveis.
             </p>
           </div>
 
-          <!-- Only the owner – no staff list -->
           <aside class="owner-card">
-            <div class="owner-label">O Fundador</div>
+            <div class="owner-label" data-i18n="about.owner.label">O Fundador</div>
             <div class="owner-name">Julio</div>
-            <div class="owner-role">Fundador de Julio's · Tavira, Algarve</div>
-            <p>
+            <div class="owner-role" data-i18n="about.owner.role">Fundador de Julio's · Tavira, Algarve</div>
+            <p data-i18n="about.owner.bio">
               Infância em Tavira, mais de três décadas na restauração e uma vida de viagens pela América, Europa e África — cada paragem deixou uma marca na cozinha e no espírito do Julio's. Seja em Lisboa ou em Lagos, todos são bem-vindos à família Julio's.
             </p>
           </aside>
@@ -771,9 +859,9 @@
       <!-- GALLERY -->
       <section id="gallery" class="section">
         <div class="section-header">
-          <div class="section-kicker">Sabores que falam por si</div>
-          <h2 class="section-title">Do petisco ao prato internacional</h2>
-          <p class="section-lead">
+          <div class="section-kicker" data-i18n="gallery.kicker">Sabores que falam por si</div>
+          <h2 class="section-title" data-i18n="gallery.title">Do petisco ao prato internacional</h2>
+          <p class="section-lead" data-i18n="gallery.lead">
             A carta combina sabores tradicionais portugueses, tapas e pratos internacionais cuidadosamente preparados para agradar a todos os gostos e celebrar a diversidade cultural que define o espírito do Julio's.
           </p>
         </div>
@@ -782,43 +870,44 @@
           <figure class="gallery-item">
             <img
               src="img/IMG-20251221-WA0000.jpg"
+              data-i18n-alt="gallery.a1"
               alt="Tábua de queijos e enchidos"
             />
-            <figcaption class="gallery-caption">
+            <figcaption class="gallery-caption" data-i18n="gallery.c1">
               Tábuas &amp; Petiscos
             </figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="img/IMG-20251221-WA0004.jpg" alt="Prato de bacalhau" />
-            <figcaption class="gallery-caption">
+            <img src="img/IMG-20251221-WA0004.jpg" data-i18n-alt="gallery.a2" alt="Prato de bacalhau" />
+            <figcaption class="gallery-caption" data-i18n="gallery.c2">
               Clássicos Portugueses
             </figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="img/IMG-20251221-WA0006.jpg" alt="Arroz de marisco" />
-            <figcaption class="gallery-caption">
+            <img src="img/IMG-20251221-WA0006.jpg" data-i18n-alt="gallery.a3" alt="Arroz de marisco" />
+            <figcaption class="gallery-caption" data-i18n="gallery.c3">
               Arrozes &amp; Mariscos
             </figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="img/IMG-20251221-WA0012.jpg" alt="Entrecosto na tábua" />
-            <figcaption class="gallery-caption">Carnes Lentas</figcaption>
+            <img src="img/IMG-20251221-WA0012.jpg" data-i18n-alt="gallery.a4" alt="Entrecosto na tábua" />
+            <figcaption class="gallery-caption" data-i18n="gallery.c4">Carnes Lentas</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="img/IMG-20251221-WA0001.jpg" alt="Mesa para eventos" />
-            <figcaption class="gallery-caption">
+            <img src="img/IMG-20251221-WA0001.jpg" data-i18n-alt="gallery.a5" alt="Mesa para eventos" />
+            <figcaption class="gallery-caption" data-i18n="gallery.c5">
               Eventos &amp; Grupos
             </figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="img/IMG-20251221-WA0002.jpg" alt="Cocktail no balcão" />
-            <figcaption class="gallery-caption">
+            <img src="img/IMG-20251221-WA0002.jpg" data-i18n-alt="gallery.a6" alt="Cocktail no balcão" />
+            <figcaption class="gallery-caption" data-i18n="gallery.c6">
               Cocktails de Assinatura
             </figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="img/IMG-20251221-WA0003.jpg" alt="Tiramisu" />
-            <figcaption class="gallery-caption">Doces da Casa</figcaption>
+            <img src="img/IMG-20251221-WA0003.jpg" data-i18n-alt="gallery.a7" alt="Tiramisu" />
+            <figcaption class="gallery-caption" data-i18n="gallery.c7">Doces da Casa</figcaption>
           </figure>
         </div>
       </section>
@@ -826,42 +915,42 @@
       <!-- EVENTS -->
       <section id="events" class="section">
         <div class="section-header">
-          <div class="section-kicker">Eventos</div>
-          <h2 class="section-title">Convívio e cultura à mesa</h2>
-          <p class="section-lead">
+          <div class="section-kicker" data-i18n="events.kicker">Eventos</div>
+          <h2 class="section-title" data-i18n="events.title">Convívio e cultura à mesa</h2>
+          <p class="section-lead" data-i18n="events.lead">
             Além da cozinha portuguesa e internacional, oferecemos diariamente atividades que aproximam pessoas de diferentes partes do mundo — boa comida, música e partilha num ambiente descontraído.
           </p>
         </div>
 
         <div class="events-grid">
           <article class="event-card">
-            <div class="event-meta">Semanal</div>
-            <h3 class="event-title">Noites de Karaoke</h3>
-            <p>
+            <div class="event-meta" data-i18n="events.e1.meta">Semanal</div>
+            <h3 class="event-title" data-i18n="events.e1.title">Noites de Karaoke</h3>
+            <p data-i18n="events.e1.text">
               Canta, ri e partilha a mesa com amigos e desconhecidos que se tornam família. Uma noite leve, multicultural e cheia de boa energia — à moda do Julio's.
             </p>
           </article>
 
           <article class="event-card">
-            <div class="event-meta">Semanal · Quinta-feira</div>
-            <h3 class="event-title">Quizzes em Várias Línguas</h3>
-            <p>
+            <div class="event-meta" data-i18n="events.e2.meta">Semanal · Quinta-feira</div>
+            <h3 class="event-title" data-i18n="events.e2.title">Quizzes em Várias Línguas</h3>
+            <p data-i18n="events.e2.text">
               Joga connosco enquanto disfrutas de petiscos e bebidas. Quizzes em várias línguas que unem pessoas de diferentes nacionalidades numa competição amigável e cheia de gargalhadas.
             </p>
           </article>
 
           <article class="event-card">
-            <div class="event-meta">Semanal · Domingo</div>
-            <h3 class="event-title">Jogos de Tabuleiro</h3>
-            <p>
+            <div class="event-meta" data-i18n="events.e3.meta">Semanal · Domingo</div>
+            <h3 class="event-title" data-i18n="events.e3.title">Jogos de Tabuleiro</h3>
+            <p data-i18n="events.e3.text">
               Escolhe um jogo, reúne-te com os teus amigos e passa uma tarde ou noite de pura diversão, com snacks, bebidas e o ambiente acolhedor que define o Julio's.
             </p>
           </article>
 
           <article class="event-card">
-            <div class="event-meta">Por marcação</div>
-            <h3 class="event-title">Eventos Privados &amp; Grupos</h3>
-            <p>
+            <div class="event-meta" data-i18n="events.e4.meta">Por marcação</div>
+            <h3 class="event-title" data-i18n="events.e4.title">Eventos Privados &amp; Grupos</h3>
+            <p data-i18n="events.e4.text">
               Planeia o teu evento connosco. Desde reuniões até celebrações, oferecemos espaço acolhedor, menu personalizável e atendimento dedicado para tornar a tua ocasião inesquecível.
             </p>
           </article>
@@ -871,41 +960,41 @@
       <!-- RESERVATIONS -->
       <section id="reservas" class="section">
         <div class="section-header">
-          <div class="section-kicker">Reservas</div>
-          <h2 class="section-title">Reserva a tua mesa</h2>
-          <p class="section-lead">
+          <div class="section-kicker" data-i18n="reservations.kicker">Reservas</div>
+          <h2 class="section-title" data-i18n="reservations.title">Reserva a tua mesa</h2>
+          <p class="section-lead" data-i18n="reservations.lead">
             Preenche os dados abaixo e envia o pedido diretamente por WhatsApp. Confirmamos a disponibilidade o mais rápido possível.
           </p>
         </div>
 
         <div class="reservation-form-card">
-          <h3>Pedido de reserva</h3>
-          <p>Indica a data, hora e número de pessoas. Para grupos com mais de 10 pessoas, menciona-o na mensagem.</p>
+          <h3 data-i18n="reservations.form.title">Pedido de reserva</h3>
+          <p data-i18n="reservations.form.intro">Indica a data, hora e número de pessoas. Para grupos com mais de 10 pessoas, menciona-o na mensagem.</p>
 
           <form class="reservation-form" id="reservation-form">
             <div class="form-field">
-              <label for="res-name">Nome</label>
-              <input type="text" id="res-name" name="name" required autocomplete="name" placeholder="O teu nome" />
+              <label for="res-name" data-i18n="reservations.form.name">Nome</label>
+              <input type="text" id="res-name" name="name" required autocomplete="name" data-i18n-placeholder="reservations.form.namePh" placeholder="O teu nome" />
             </div>
             <div class="form-field">
-              <label for="res-phone">Telefone</label>
-              <input type="tel" id="res-phone" name="phone" required autocomplete="tel" placeholder="+351 900 000 000" />
+              <label for="res-phone" data-i18n="reservations.form.phone">Telefone</label>
+              <input type="tel" id="res-phone" name="phone" required autocomplete="tel" data-i18n-placeholder="reservations.form.phonePh" placeholder="+351 900 000 000" />
             </div>
             <div class="form-field">
-              <label for="res-date">Data</label>
+              <label for="res-date" data-i18n="reservations.form.date">Data</label>
               <input type="date" id="res-date" name="date" required />
             </div>
             <div class="form-field">
-              <label for="res-time">Hora</label>
+              <label for="res-time" data-i18n="reservations.form.time">Hora</label>
               <input type="time" id="res-time" name="time" required />
             </div>
             <div class="form-field form-field-full">
-              <label for="res-guests">Número de pessoas</label>
-              <input type="number" id="res-guests" name="guests" min="1" max="50" required placeholder="Ex.: 4" />
+              <label for="res-guests" data-i18n="reservations.form.guests">Número de pessoas</label>
+              <input type="number" id="res-guests" name="guests" min="1" max="50" required data-i18n-placeholder="reservations.form.guestsPh" placeholder="Ex.: 4" />
             </div>
             <div class="reservation-form-actions">
-              <button type="submit" class="btn-primary btn-whatsapp">Enviar por WhatsApp</button>
-              <span class="reservation-form-note">Serás redirecionado para o WhatsApp com a mensagem pronta.</span>
+              <button type="submit" class="btn-primary btn-whatsapp" data-i18n="reservations.form.submit">Enviar por WhatsApp</button>
+              <span class="reservation-form-note" data-i18n="reservations.form.note">Serás redirecionado para o WhatsApp com a mensagem pronta.</span>
             </div>
           </form>
         </div>
@@ -914,36 +1003,35 @@
       <!-- VISIT US -->
       <section id="visit" class="section">
         <div class="section-header">
-          <div class="section-kicker">Visita-nos</div>
-          <h2 class="section-title">Julio's · Campo Pequeno</h2>
+          <div class="section-kicker" data-i18n="visit.kicker">Visita-nos</div>
+          <h2 class="section-title" data-i18n="visit.title">Julio's · Campo Pequeno</h2>
         </div>
 
         <div class="visit-grid">
           <div>
             <div class="visit-block">
-              <h3>Morada</h3>
+              <h3 data-i18n="visit.address.label">Morada</h3>
               <p>
-                Avenida Elias Garcia, 19B<br />
-                1000-147 Lisboa · Campo Pequeno<br />
+                <span data-i18n-html="visit.address">Avenida Elias Garcia, 19B<br />1000-147 Lisboa · Campo Pequeno</span><br />
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=38.7394912,-9.1441767"
                   target="_blank"
+                  rel="noopener"
+                  data-i18n="visit.directions"
                   >Como chegar</a
                 >
               </p>
             </div>
 
             <div class="visit-block">
-              <h3>Horário</h3>
-              <p>
-                Segunda a Sexta: 12h00–00h00<br />
-                Sábado: 18h00–00h00<br />
-                Domingo: Encerrado
+              <h3 data-i18n="visit.hours.label">Horário</h3>
+              <p data-i18n-html="visit.hours">
+                Segunda a Sexta: 12h00–00h00<br />Sábado: 18h00–00h00<br />Domingo: Encerrado
               </p>
             </div>
 
             <div class="visit-block">
-              <h3>Contacto</h3>
+              <h3 data-i18n="visit.contact.label">Contacto</h3>
               <p>
                 <a href="tel:+351916475896">+351 916 475 896</a>
               </p>
@@ -951,9 +1039,9 @@
           </div>
 
           <div class="visit-map" id="visit-map">
-            <!-- Interactive map (Leaflet) -->
             <div
               id="visit-map-map"
+              data-i18n-aria="visit.map.aria"
               aria-label="Mapa — Julio's em Campo Pequeno"
             ></div>
           </div>
@@ -963,68 +1051,28 @@
       <!-- MENU -->
       <section id="ementa" class="section">
         <div class="section-header">
-          <div class="section-kicker">Ementa</div>
-          <h2 class="section-title">Descobre a nossa gastronomia</h2>
-          <p class="section-lead">
+          <div class="section-kicker" data-i18n="menuSection.kicker">Ementa</div>
+          <h2 class="section-title" data-i18n="menuSection.title">Descobre a nossa gastronomia</h2>
+          <p class="section-lead" data-i18n="menuSection.lead">
             Sabores tradicionais portugueses, tapas e pratos internacionais — explora a carta completa e descobre o que torna cada refeição no Julio's uma experiência para recordar.
           </p>
         </div>
         <div style="max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem 1rem; text-align: center;">
-          <a href="menu.html" class="btn-primary">Consultar Ementa</a>
+          <a href="menu.html" class="btn-primary" data-i18n="menuSection.cta">Consultar Ementa</a>
         </div>
       </section>
     </main>
 
     <footer>
-      <div>© Julio's · Lisboa &amp; Lagos</div>
+      <div data-i18n="footer.copy">© Julio's · Lisboa &amp; Lagos</div>
       <div>
-        <a href="#">Política de Privacidade</a> ·
-        <a href="#">Termos &amp; Condições</a>
+        <a href="#" data-i18n="footer.privacy">Política de Privacidade</a> ·
+        <a href="#" data-i18n="footer.terms">Termos &amp; Condições</a>
       </div>
     </footer>
 
-    <script>
-      (function () {
-        var WHATSAPP_NUMBER = '351916475896';
-        var form = document.getElementById('reservation-form');
-        if (!form) return;
-
-        var dateInput = document.getElementById('res-date');
-        if (dateInput) {
-          var today = new Date();
-          dateInput.min = today.toISOString().split('T')[0];
-        }
-
-        form.addEventListener('submit', function (event) {
-          event.preventDefault();
-
-          var name = document.getElementById('res-name').value.trim();
-          var phone = document.getElementById('res-phone').value.trim();
-          var date = document.getElementById('res-date').value;
-          var time = document.getElementById('res-time').value;
-          var guests = document.getElementById('res-guests').value.trim();
-
-          var formattedDate = date;
-          if (date) {
-            var parts = date.split('-');
-            if (parts.length === 3) {
-              formattedDate = parts[2] + '/' + parts[1] + '/' + parts[0];
-            }
-          }
-
-          var message =
-            'Olá! Gostaria de fazer uma reserva no Julio\'s.\n\n' +
-            'Nome: ' + name + '\n' +
-            'Telefone: ' + phone + '\n' +
-            'Data: ' + formattedDate + '\n' +
-            'Hora: ' + time + '\n' +
-            'Número de pessoas: ' + guests;
-
-          var url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message);
-          window.open(url, '_blank', 'noopener');
-        });
-      })();
-    </script>
+    <script src="js/i18n.js"></script>
+    <script>JuliosI18n.init({ page: "index" });</script>
 
     <!-- Leaflet JS -->
     <script>
@@ -1078,12 +1126,8 @@
           attribution: "&copy; OpenStreetMap contributors",
         }).addTo(map);
 
-        var marker = L.marker([lat, lng])
-          .addTo(map)
-          .bindPopup(
-            '<strong>Julio\'s</strong><br>Avenida Elias Garcia, 19B, 1000-147 Lisboa<br><a href="https://www.google.com/maps/search/?api=1&query=38.7394912,-9.1441767" target="_blank">Como chegar</a>'
-          )
-          .openPopup();
+        var marker = L.marker([lat, lng]).addTo(map);
+        JuliosI18n.registerMapMarker(marker);
       })();
     </script>
   </body>

@@ -2,7 +2,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ementa — Julio's</title>
+    <title>Ementa — Julio's · Campo Pequeno, Lisboa</title>
+    <meta
+      name="description"
+      id="meta-description"
+      content="Consulta a ementa do Julio's: tábuas e petiscos, clássicos portugueses, arrozes, carnes, cocktails e doces da casa em Campo Pequeno, Lisboa."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#c38a4b" />
+    <link rel="canonical" id="canonical-link" href="https://lilianalukash.github.io/JuliosWebsite/menu.html" />
+    <link rel="alternate" hreflang="pt" href="https://lilianalukash.github.io/JuliosWebsite/menu.html?lang=pt" />
+    <link rel="alternate" hreflang="en" href="https://lilianalukash.github.io/JuliosWebsite/menu.html?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://lilianalukash.github.io/JuliosWebsite/menu.html?lang=pt" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Julio's" />
+    <meta property="og:title" id="og-title" content="Ementa — Julio's · Campo Pequeno, Lisboa" />
+    <meta property="og:description" id="og-description" content="Consulta a ementa do Julio's em Campo Pequeno, Lisboa." />
+    <meta property="og:url" content="https://lilianalukash.github.io/JuliosWebsite/menu.html" />
+    <meta property="og:image" content="https://lilianalukash.github.io/JuliosWebsite/img/IMG_20260221_204051.png" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="twitter-title" content="Ementa — Julio's · Campo Pequeno, Lisboa" />
+    <meta name="twitter:description" id="twitter-description" content="Consulta a ementa do Julio's em Campo Pequeno, Lisboa." />
+    <meta name="twitter:image" content="https://lilianalukash.github.io/JuliosWebsite/img/IMG_20260221_204051.png" />
     <style>
       * {
         margin: 0;
@@ -67,6 +90,31 @@
 
       .back-btn:hover {
         color: var(--accent);
+      }
+
+      .lang-switcher {
+        display: inline-flex;
+        border: 1px solid #e1d6c9;
+        border-radius: 999px;
+        overflow: hidden;
+        background: white;
+      }
+
+      .lang-btn {
+        border: none;
+        background: transparent;
+        color: var(--muted);
+        font: inherit;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        padding: 0.45rem 0.65rem;
+        cursor: pointer;
+      }
+
+      .lang-btn.active {
+        background: var(--accent);
+        color: white;
       }
 
       main {
@@ -212,27 +260,30 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body data-page="menu">
     <header>
       <div class="nav">
-        <a href="index.html" class="back-btn">← Voltar</a>
+        <a href="index.html" class="back-btn" data-i18n="nav.back">← Voltar</a>
         <div class="logo">Julio<span>'</span>s</div>
-        <div style="width: 80px;"></div>
+        <div class="lang-switcher" role="group" aria-label="Language">
+          <button type="button" class="lang-btn active" data-lang="pt" aria-pressed="true">PT</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
       </div>
     </header>
 
     <main>
       <div class="section-header">
-        <div class="section-kicker">Ementa</div>
-        <h1>Descobre o Nosso Menu</h1>
-        <p class="section-lead">
+        <div class="section-kicker" data-i18n="menuPage.kicker">Ementa</div>
+        <h1 data-i18n="menuPage.title">Descobre o Nosso Menu</h1>
+        <p class="section-lead" data-i18n="menuPage.lead">
           Petiscos, pratos tradicionais e cocktails criados com paixão pela gastronomia portuguesa.
         </p>
       </div>
 
       <div class="menu-content">
         <div class="menu-section">
-          <h2>Tábuas & Petiscos</h2>
+          <h2 data-i18n="menu.sec.boards">Tábuas & Petiscos</h2>
           <div class="menu-item">
             <div>
               <div class="menu-item-name">Tábua de Queijos Portugueses</div>
@@ -264,7 +315,7 @@
         </div>
 
         <div class="menu-section">
-          <h2>Clássicos Portugueses</h2>
+          <h2 data-i18n="menu.sec.classics">Clássicos Portugueses</h2>
           <div class="menu-item">
             <div>
               <div class="menu-item-name">Bacalhau à Brás</div>
@@ -290,7 +341,7 @@
 
 
         <div class="menu-section">
-          <h2>Arrozes & Mariscos</h2>
+          <h2 data-i18n="menu.sec.seafood">Arrozes & Mariscos</h2>
           <div class="menu-item">
             <div>
               <div class="menu-item-name">Arroz de Marisco</div>
@@ -316,7 +367,7 @@
 
 
         <div class="menu-section">
-          <h2>Carnes Lentas</h2>
+          <h2 data-i18n="menu.sec.meats">Carnes Lentas</h2>
           <div class="menu-item">
             <div>
               <div class="menu-item-name">Entrecosto em Tábua</div>
@@ -342,7 +393,7 @@
 
 
         <div class="menu-section">
-          <h2>Cocktails de Assinatura</h2>
+          <h2 data-i18n="menu.sec.cocktails">Cocktails de Assinatura</h2>
           <div class="menu-item">
             <div>
               <div class="menu-item-name">Julio's Old Fashioned</div>
@@ -375,7 +426,7 @@
 
 
         <div class="menu-section">
-          <h2>Doces da Casa</h2>
+          <h2 data-i18n="menu.sec.desserts">Doces da Casa</h2>
           <div class="menu-item">
             <div>
               <div class="menu-item-name">Tiramisu Tradicional</div>
@@ -401,7 +452,7 @@
 
         <!-- BEBIDAS -->
         <div class="menu-section">
-          <h2>Bebidas</h2>
+          <h2 data-i18n="menu.sec.drinks">Bebidas</h2>
           <div class="menu-item">
             <div>
               <div class="menu-item-name">Vinhos de Portugal</div>
@@ -428,11 +479,13 @@
     </main>
 
     <footer>
-      <div>© Julio's Campo Pequeno, Lisboa</div>
+      <div data-i18n="footer.copy">© Julio's · Lisboa &amp; Lagos</div>
       <div>
-        <a href="#">Política de Privacidade</a> ·
-        <a href="#">Termos &amp; Condições</a>
+        <a href="#" data-i18n="footer.privacy">Política de Privacidade</a> ·
+        <a href="#" data-i18n="footer.terms">Termos &amp; Condições</a>
       </div>
     </footer>
+    <script src="js/i18n.js"></script>
+    <script>JuliosI18n.init({ page: "menu" });</script>
   </body>
 </html>
