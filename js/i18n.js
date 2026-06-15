@@ -382,6 +382,11 @@
   var currentLang = "pt";
   var mapMarker = null;
 
+  function hasTranslation(key) {
+    var pack = translations[currentLang] || translations.pt;
+    return pack[key] != null || translations.pt[key] != null;
+  }
+
   function t(key) {
     var pack = translations[currentLang] || translations.pt;
     return pack[key] != null ? pack[key] : translations.pt[key] || key;
@@ -451,23 +456,30 @@
 
   function applyTranslations() {
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
-      el.textContent = t(el.getAttribute("data-i18n"));
+      var key = el.getAttribute("data-i18n");
+      if (hasTranslation(key)) el.textContent = t(key);
     });
 
     document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
-      el.innerHTML = t(el.getAttribute("data-i18n-html"));
+      var key = el.getAttribute("data-i18n-html");
+      if (hasTranslation(key)) el.innerHTML = t(key);
     });
 
     document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
-      el.alt = t(el.getAttribute("data-i18n-alt"));
+      var key = el.getAttribute("data-i18n-alt");
+      if (hasTranslation(key)) el.alt = t(key);
     });
 
     document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
-      el.placeholder = t(el.getAttribute("data-i18n-placeholder"));
+      var key = el.getAttribute("data-i18n-placeholder");
+      if (hasTranslation(key)) el.placeholder = t(key);
     });
 
     document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
-      el.setAttribute("aria-label", t(el.getAttribute("data-i18n-aria")));
+      var key = el.getAttribute("data-i18n-aria");
+      if (hasTranslation(key)) {
+        el.setAttribute("aria-label", t(key));
+      }
     });
 
     document.querySelectorAll(".lang-btn").forEach(function (btn) {
