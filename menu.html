@@ -6,7 +6,7 @@
     <meta
       name="description"
       id="meta-description"
-      content="Consulta a ementa do Julio's: tábuas e petiscos, clássicos portugueses, arrozes, carnes, cocktails e doces da casa em Campo Pequeno, Lisboa."
+      content="Consulta a ementa do Julio's: salgados, tábuas, petiscos, pratos principais e sobremesas em Campo Pequeno, Lisboa."
     />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#c38a4b" />
@@ -175,6 +175,14 @@
         letter-spacing: 0.08em;
       }
 
+      .menu-section-note {
+        font-size: 0.88rem;
+        color: var(--muted);
+        margin-top: -0.5rem;
+        margin-bottom: 0.5rem;
+        font-style: italic;
+      }
+
       .menu-item {
         display: grid;
         grid-template-columns: 1fr auto;
@@ -208,6 +216,15 @@
         color: var(--accent);
         font-weight: 600;
         white-space: nowrap;
+      }
+
+      .menu-note {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #ede6df;
+        font-size: 0.9rem;
+        color: var(--muted);
+        text-align: center;
       }
 
       footer {
@@ -282,199 +299,11 @@
       </div>
 
       <div class="menu-content">
-        <div class="menu-section">
-          <h2 data-i18n="menu.sec.boards">Tábuas & Petiscos</h2>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Tábua de Queijos Portugueses</div>
-              <div class="menu-item-desc">Seleção de queijos premium da região com acompanhamentos</div>
-            </div>
-            <div class="menu-item-price">16€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Tábua de Enchidos e Presunto</div>
-              <div class="menu-item-desc">Presunto Prosciutto, Alheira e Chouriço português</div>
-            </div>
-            <div class="menu-item-price">18€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Pão Torrado com Alho</div>
-              <div class="menu-item-desc">Bruschettas caseiras com alho e azeite extra virgem</div>
-            </div>
-            <div class="menu-item-price">5€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Azeitonas Mistas</div>
-              <div class="menu-item-desc">Seleção de azeitonas marinadas com ervas</div>
-            </div>
-            <div class="menu-item-price">6€</div>
-          </div>
-        </div>
-
-        <div class="menu-section">
-          <h2 data-i18n="menu.sec.classics">Clássicos Portugueses</h2>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Bacalhau à Brás</div>
-              <div class="menu-item-desc">Bacalhau desfiado, batata palha e cebola roxa, com ovo a cavalo</div>
-            </div>
-            <div class="menu-item-price">14€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Sardinas Grelhadas</div>
-              <div class="menu-item-desc">Sardinas frescas grelhadas com limão e salsa</div>
-            </div>
-            <div class="menu-item-price">12€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Caldo Verde</div>
-              <div class="menu-item-desc">Sopa tradicional com caldo de carne, couve e chouriço</div>
-            </div>
-            <div class="menu-item-price">7€</div>
-          </div>
-        </div>
-
-
-        <div class="menu-section">
-          <h2 data-i18n="menu.sec.seafood">Arrozes & Mariscos</h2>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Arroz de Marisco</div>
-              <div class="menu-item-desc">Arroz cremoso com camarão, amêijoa e mexilhão (para 2)</div>
-            </div>
-            <div class="menu-item-price">28€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Arroz de Pato</div>
-              <div class="menu-item-desc">Arroz tradicional com pato confit e caldo (para 2)</div>
-            </div>
-            <div class="menu-item-price">26€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Cataplana de Marisco</div>
-              <div class="menu-item-desc">Camarão, amêijoa e mexilhão em seleção premium (para 2)</div>
-            </div>
-            <div class="menu-item-price">32€</div>
-          </div>
-        </div>
-
-
-        <div class="menu-section">
-          <h2 data-i18n="menu.sec.meats">Carnes Lentas</h2>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Entrecosto em Tábua</div>
-              <div class="menu-item-desc">Costela grelhada lentamente, tenra e suculenta (para 2)</div>
-            </div>
-            <div class="menu-item-price">24€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Frango na Pucara</div>
-              <div class="menu-item-desc">Frango confit com batata assada e molho de vinho</div>
-            </div>
-            <div class="menu-item-price">16€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Costela do Porco Preto</div>
-              <div class="menu-item-desc">Carne de porco Ibérico grelhada, com acompanhamentos sazonais</div>
-            </div>
-            <div class="menu-item-price">22€</div>
-          </div>
-        </div>
-
-
-        <div class="menu-section">
-          <h2 data-i18n="menu.sec.cocktails">Cocktails de Assinatura</h2>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Julio's Old Fashioned</div>
-              <div class="menu-item-desc">Whiskey premium, bitters, açúcar e laranja</div>
-            </div>
-            <div class="menu-item-price">10€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Lisboa Mojito</div>
-              <div class="menu-item-desc">Rum branco, açúcar, lima, hortelã fresca e água mineral</div>
-            </div>
-            <div class="menu-item-price">9€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Vinho Verde Aperitivo</div>
-              <div class="menu-item-desc">Vinho verde com espuma de limão e morangos frescos</div>
-            </div>
-            <div class="menu-item-price">8€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Sangria da Casa</div>
-              <div class="menu-item-desc">Vinho tinto, frutas sazonais e um toque de licor</div>
-            </div>
-            <div class="menu-item-price">7€ (copo) / 28€ (jarra)</div>
-          </div>
-        </div>
-
-
-        <div class="menu-section">
-          <h2 data-i18n="menu.sec.desserts">Doces da Casa</h2>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Tiramisu Tradicional</div>
-              <div class="menu-item-desc">Tiramisu caseiro com mascarpone e chocolate</div>
-            </div>
-            <div class="menu-item-price">7€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Pastéis de Nata</div>
-              <div class="menu-item-desc">3 unidades quentes, polvilhadas com canela</div>
-            </div>
-            <div class="menu-item-price">6€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Chocolate Quente com Broa</div>
-              <div class="menu-item-desc">Chocolate premium e broa de avó caseira</div>
-            </div>
-            <div class="menu-item-price">8€</div>
-          </div>
-        </div>
-
-        <!-- BEBIDAS -->
-        <div class="menu-section">
-          <h2 data-i18n="menu.sec.drinks">Bebidas</h2>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Vinhos de Portugal</div>
-              <div class="menu-item-desc">Seleção de tintos e brancos de qualidade. Consulte o sommelier</div>
-            </div>
-            <div class="menu-item-price">A partir de 5€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Cervejas Premium</div>
-              <div class="menu-item-desc">Pilsen, Weizen e Stout internacionais</div>
-            </div>
-            <div class="menu-item-price">5€ a 7€</div>
-          </div>
-          <div class="menu-item">
-            <div>
-              <div class="menu-item-name">Café & Chá</div>
-              <div class="menu-item-desc">Espresso, Cappuccino, Chás selecionados</div>
-            </div>
-            <div class="menu-item-price">3€ a 4€</div>
-          </div>
-        </div>
+        <div id="menu-sections"></div>
+        <p class="menu-note">
+          <span data-i18n="menu.note.vat">Todos os preços com IVA incluído.</span><br />
+          <a href="https://www.instagram.com/julios_petiscaria_lisboa/" target="_blank" rel="noopener" data-i18n="menu.note.instagram">Siga-nos @julios_petiscaria_lisboa</a>
+        </p>
       </div>
     </main>
 
@@ -486,6 +315,8 @@
       </div>
     </footer>
     <script src="js/i18n.js"></script>
+    <script src="js/menu-data.js"></script>
+    <script src="js/menu.js"></script>
     <script>JuliosI18n.init({ page: "menu" });</script>
   </body>
 </html>

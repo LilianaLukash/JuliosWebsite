@@ -13,9 +13,13 @@
         "Julio's, restaurante Lisboa, Campo Pequeno, cozinha portuguesa, tapas, petiscos, restaurante internacional, reservas, Avenida Elias Garcia",
       "meta.menu.title": "Ementa — Julio's · Campo Pequeno, Lisboa",
       "meta.menu.description":
-        "Consulta a ementa do Julio's: tábuas e petiscos, clássicos portugueses, arrozes, carnes, cocktails e doces da casa em Campo Pequeno, Lisboa.",
+        "Consulta a ementa do Julio's: salgados, tábuas, petiscos, pratos principais e sobremesas em Campo Pequeno, Lisboa.",
+      "meta.promos.title": "Ofertas Especiais — Julio's · Campo Pequeno, Lisboa",
+      "meta.promos.description":
+        "Marisco para Dois (28,99€) e Wine & Petiscos Experience (47,99€). Reserva as ofertas especiais do Julio's por WhatsApp.",
 
       "nav.about": "Sobre",
+      "nav.promos": "Ofertas",
       "nav.gallery": "Sabores",
       "nav.events": "Eventos",
       "nav.menu": "Ementa",
@@ -42,6 +46,32 @@
       "hero.img1": "Tábuas de enchidos",
       "hero.img2": "Arroz de marisco",
       "hero.img3": "Cocktail no bar",
+
+      "promos.kicker": "Ofertas Especiais",
+      "promos.title": "Experiências para partilhar",
+      "promos.lead":
+        "Combinações especiais de marisco, petiscos e vinho — perfeitas para dois ou para uma noite completa à mesa.",
+      "promos.view": "Ver oferta",
+      "promos.order": "Reservar oferta",
+      "promos.page.title": "Ofertas Especiais",
+      "promos.page.lead":
+        "Escolhe a experiência ideal e envia o pedido por WhatsApp. Confirmamos a disponibilidade o mais rápido possível.",
+      "promos.marisco.title": "Marisco para Dois",
+      "promos.marisco.includes":
+        "Gambas ao Alho · Amêijoas à Bulhão Pato · Arroz · 2 copos de vinho branco",
+      "promos.marisco.desc":
+        "Uma seleção generosa de marisco para partilhar a dois, acompanhada de arroz e dois copos de vinho branco. Ideal para uma noite especial no Julio's.",
+      "promos.wine.title": "Wine & Petiscos Experience",
+      "promos.wine.includes":
+        "Garrafa de vinho branco · Gambas ao Alho · Amêijoas à Bulhão Pato · Asas de Frango · Pimentos Padrón · Batatas Fritas",
+      "promos.wine.desc":
+        "A experiência completa: uma garrafa de vinho branco com os nossos petiscos mais populares — marisco, asas de frango, pimentos e batatas fritas. Perfeita para partilhar.",
+      "promos.marisco.whatsapp":
+        "Olá! Gostaria de reservar a oferta \"Marisco para Dois\" (28,99€).",
+      "promos.wine.whatsapp":
+        "Olá! Gostaria de reservar a oferta \"Wine & Petiscos Experience\" (47,99€).",
+      "promos.marisco.alt": "Marisco para dois no Julio's",
+      "promos.wine.alt": "Wine & Petiscos Experience no Julio's",
 
       "about.kicker": "Sobre Julio's",
       "about.title": "Uma história de paixão e partilha",
@@ -143,15 +173,19 @@
       "menuPage.kicker": "Ementa",
       "menuPage.title": "Descobre o Nosso Menu",
       "menuPage.lead":
-        "Petiscos, pratos tradicionais e cocktails criados com paixão pela gastronomia portuguesa e internacional.",
+        "Salgados, tábuas, petiscos, pratos principais e sobremesas — a carta atual do Julio's em Campo Pequeno.",
 
-      "menu.sec.boards": "Tábuas & Petiscos",
-      "menu.sec.classics": "Clássicos Portugueses",
-      "menu.sec.seafood": "Arrozes & Mariscos",
-      "menu.sec.meats": "Carnes Lentas",
-      "menu.sec.cocktails": "Cocktails de Assinatura",
-      "menu.sec.desserts": "Doces da Casa",
-      "menu.sec.drinks": "Bebidas",
+      "menu.sec.salgados": "Salgados",
+      "menu.sec.boards": "Tábuas",
+      "menu.sec.petiscos": "Petiscos",
+      "menu.sec.burgers": "Hambúrgueres",
+      "menu.sec.mains": "Pratos Principais",
+      "menu.sec.pizza": "Pizzas",
+      "menu.sec.desserts": "Sobremesa",
+      "menu.note.burgers":
+        "Todos os hambúrgueres acompanham: ketchup, mostarda, maionese e batatas.",
+      "menu.note.vat": "Todos os preços com IVA incluído.",
+      "menu.note.instagram": "Siga-nos @julios_petiscaria_lisboa",
 
       "footer.copy": "© Julio's · Lisboa & Lagos",
       "footer.privacy": "Política de Privacidade",
@@ -165,9 +199,13 @@
         "Julio's, Lisbon restaurant, Campo Pequeno, Portuguese food, tapas, petiscos, international restaurant, reservations, Avenida Elias Garcia",
       "meta.menu.title": "Menu — Julio's · Campo Pequeno, Lisbon",
       "meta.menu.description":
-        "Browse Julio's menu: boards & petiscos, Portuguese classics, rice dishes, meats, cocktails and house desserts in Campo Pequeno, Lisbon.",
+        "Browse Julio's menu: savouries, boards, petiscos, main courses and desserts in Campo Pequeno, Lisbon.",
+      "meta.promos.title": "Special Offers — Julio's · Campo Pequeno, Lisbon",
+      "meta.promos.description":
+        "Seafood for Two (€28.99) and Wine & Petiscos Experience (€47.99). Book Julio's special offers via WhatsApp.",
 
       "nav.about": "About",
+      "nav.promos": "Offers",
       "nav.gallery": "Flavours",
       "nav.events": "Events",
       "nav.menu": "Menu",
@@ -194,6 +232,32 @@
       "hero.img1": "Charcuterie boards",
       "hero.img2": "Seafood rice",
       "hero.img3": "Cocktail at the bar",
+
+      "promos.kicker": "Special Offers",
+      "promos.title": "Experiences to share",
+      "promos.lead":
+        "Special combinations of seafood, petiscos and wine — perfect for two or for a full evening at the table.",
+      "promos.view": "View offer",
+      "promos.order": "Book this offer",
+      "promos.page.title": "Special Offers",
+      "promos.page.lead":
+        "Choose your experience and send your request via WhatsApp. We will confirm availability as soon as possible.",
+      "promos.marisco.title": "Seafood for Two",
+      "promos.marisco.includes":
+        "Garlic Prawns · Clams Bulhão Pato Style · Rice · 2 glasses of white wine",
+      "promos.marisco.desc":
+        "A generous seafood selection to share for two, served with rice and two glasses of white wine. Ideal for a special evening at Julio's.",
+      "promos.wine.title": "Wine & Petiscos Experience",
+      "promos.wine.includes":
+        "Bottle of white wine · Garlic Prawns · Clams Bulhão Pato Style · Chicken Wings · Padrón Peppers · French Fries",
+      "promos.wine.desc":
+        "The full experience: a bottle of white wine with our most popular petiscos — seafood, chicken wings, peppers and fries. Perfect for sharing.",
+      "promos.marisco.whatsapp":
+        "Hello! I would like to book the \"Seafood for Two\" offer (€28.99).",
+      "promos.wine.whatsapp":
+        "Hello! I would like to book the \"Wine & Petiscos Experience\" offer (€47.99).",
+      "promos.marisco.alt": "Seafood for two at Julio's",
+      "promos.wine.alt": "Wine & Petiscos Experience at Julio's",
 
       "about.kicker": "About Julio's",
       "about.title": "A story of passion and sharing",
@@ -295,15 +359,19 @@
       "menuPage.kicker": "Menu",
       "menuPage.title": "Discover Our Menu",
       "menuPage.lead":
-        "Petiscos, traditional dishes and cocktails created with a passion for Portuguese and international gastronomy.",
+        "Savouries, boards, petiscos, main courses and desserts — Julio's current menu in Campo Pequeno.",
 
-      "menu.sec.boards": "Boards & Petiscos",
-      "menu.sec.classics": "Portuguese Classics",
-      "menu.sec.seafood": "Rice & Seafood",
-      "menu.sec.meats": "Slow-cooked Meats",
-      "menu.sec.cocktails": "Signature Cocktails",
-      "menu.sec.desserts": "House Desserts",
-      "menu.sec.drinks": "Drinks",
+      "menu.sec.salgados": "Savouries",
+      "menu.sec.boards": "Boards",
+      "menu.sec.petiscos": "Petiscos",
+      "menu.sec.burgers": "Burgers",
+      "menu.sec.mains": "Main Courses",
+      "menu.sec.pizza": "Pizzas",
+      "menu.sec.desserts": "Dessert",
+      "menu.note.burgers":
+        "All burgers are served with ketchup, mustard, mayonnaise and fries.",
+      "menu.note.vat": "All prices include VAT.",
+      "menu.note.instagram": "Follow us @julios_petiscaria_lisboa",
 
       "footer.copy": "© Julio's · Lisbon & Lagos",
       "footer.privacy": "Privacy Policy",
@@ -344,9 +412,15 @@
   }
 
   function updateMeta(page) {
-    var titleKey = page === "menu" ? "meta.menu.title" : "meta.index.title";
-    var descKey =
-      page === "menu" ? "meta.menu.description" : "meta.index.description";
+    var titleKey = "meta.index.title";
+    var descKey = "meta.index.description";
+    if (page === "menu") {
+      titleKey = "meta.menu.title";
+      descKey = "meta.menu.description";
+    } else if (page === "promos") {
+      titleKey = "meta.promos.title";
+      descKey = "meta.promos.description";
+    }
     document.title = t(titleKey);
 
     setMetaContent("meta-description", t(descKey));
@@ -365,7 +439,7 @@
       ogLocale.content = currentLang === "pt" ? "pt_PT" : "en_GB";
     }
 
-    if (page !== "menu") {
+    if (page !== "menu" && page !== "promos") {
       setMetaContent("meta-keywords", t("meta.index.keywords"));
     }
   }
@@ -404,6 +478,10 @@
 
     updateMapPopup();
     updateSchema();
+
+    if (global.JuliosMenu && document.body.getAttribute("data-page") === "menu") {
+      global.JuliosMenu.render(currentLang);
+    }
   }
 
   function updateMapPopup() {
@@ -529,11 +607,24 @@
     if (marker.openPopup) marker.openPopup();
   }
 
+  function bindPromoButtons() {
+    document.querySelectorAll("[data-promo-whatsapp]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var key = btn.getAttribute("data-promo-whatsapp");
+        var message = t(key);
+        var url =
+          "https://wa.me/351916475896?text=" + encodeURIComponent(message);
+        global.open(url, "_blank", "noopener");
+      });
+    });
+  }
+
   function init(options) {
     options = options || {};
     currentLang = getInitialLang();
     bindLangSwitcher();
     bindReservationForm();
+    bindPromoButtons();
     applyTranslations();
     updateMeta(options.page || "index");
 
@@ -546,6 +637,9 @@
     init: init,
     setLang: setLang,
     t: t,
+    getLang: function () {
+      return currentLang;
+    },
     registerMapMarker: registerMapMarker,
     SITE_URL: SITE_URL
   };
