@@ -619,21 +619,19 @@
     if (marker.openPopup) marker.openPopup();
   }
 
-  function trackPromoConversion(btn) {
-    if (typeof global.gtag !== "function") return;
-    var sendTo = btn.getAttribute("data-gtag-send-to") || "AW-18241823845";
-    global.gtag("event", "conversion", { send_to: sendTo });
-  }
-
   function bindPromoButtons() {
     document.querySelectorAll("[data-promo-whatsapp]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        trackPromoConversion(btn);
         var key = btn.getAttribute("data-promo-whatsapp");
         var message = t(key);
         var url =
           "https://wa.me/351916475896?text=" + encodeURIComponent(message);
-        global.open(url, "_blank", "noopener");
+
+        if (typeof global.gtag_report_conversion === "function") {
+          global.gtag_report_conversion(url);
+        } else {
+          global.open(url, "_blank", "noopener");
+        }
       });
     });
   }
