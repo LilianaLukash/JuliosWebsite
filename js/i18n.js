@@ -19,6 +19,7 @@
         "Marisco para Dois (28,99€) e Wine & Petiscos Experience (47,99€). Reserva as ofertas especiais do Julio's por WhatsApp.",
 
       "nav.about": "Sobre",
+      "nav.secrets": "Segredos",
       "nav.promos": "Ofertas",
       "nav.gallery": "Sabores",
       "nav.events": "Eventos",
@@ -72,6 +73,88 @@
         "Olá! Gostaria de reservar a oferta \"Wine & Petiscos Experience\" (47,99€).",
       "promos.marisco.alt": "Marisco para dois no Julio's",
       "promos.wine.alt": "Wine & Petiscos Experience no Julio's",
+
+      "meta.secrets.title": "Segredos da Cozinha Portuguesa — Julio's · Lisboa",
+      "meta.secrets.description":
+        "Experiência de Entradas Portuguesas: Tábua Mista, Amêijoas à Bulhão Pato e Pimentos Padrón por 34,99€. Reserva no Julio's, Campo Pequeno.",
+
+      "secrets.kicker": "Segredos da Cozinha Portuguesa",
+      "secrets.title": "Três pratos que todo português conhece",
+      "secrets.lead":
+        "Nem toda a comida portuguesa é bacalhau e pastel de nata. Descobre três favoritos locais partilhados à mesa há gerações: amêijoas frescas com alho e coentros, enchidos e queijos fumados, e os famosos pimentos de Padrón — onde um em cada dez pode surpreender-te.",
+      "secrets.price": "Prova os três juntos por apenas 34,99€",
+      "secrets.includes.title": "Inclui:",
+      "secrets.includes.1": "Tábua Mista (enchidos, queijos e charcutaria)",
+      "secrets.includes.2": "Amêijoas à Bulhão Pato",
+      "secrets.includes.3": "Pimentos Padrón",
+      "secrets.discover": "Descobre a história",
+      "secrets.readmore": "Ler mais",
+      "secrets.cardBtn": "Ver história",
+      "secrets.promoBtn": "Prova os três juntos — 34,99€",
+      "secrets.order": "Reservar experiência",
+      "secrets.whatsapp":
+        "Olá! Gostaria de reservar a Experiência de Entradas Portuguesas (34,99€).",
+      "secrets.hero.alt": "Experiência de entradas portuguesas no Julio's",
+      "secrets.ameijoas.alt": "Amêijoas à Bulhão Pato",
+      "secrets.padron.alt": "Pimentos Padrón",
+      "secrets.tabua.alt": "Tábua Mista de enchidos e queijos",
+
+      "secrets.page.title": "Os Segredos da Cozinha Portuguesa",
+      "secrets.tradition.title": "Uma tradição que vale a pena preservar",
+      "secrets.tradition.p1":
+        "Encontrar comida portuguesa verdadeiramente tradicional está a tornar-se mais difícil a cada ano.",
+      "secrets.tradition.p2":
+        "Por toda a Europa, restaurantes de família antigos desaparecem, substituídos por menus internacionais quase idênticos quer estejas em Lisboa, Berlim, Londres ou Amesterdão.",
+      "secrets.tradition.p3": "O resultado é conveniente. Mas algo importante perde-se.",
+      "secrets.tradition.p4":
+        "As receitas, histórias e sabores com que gerações cresceram desaparecem lentamente do quotidiano.",
+      "secrets.tradition.p5":
+        "No Julio's, acreditamos que estas tradições valem a pena manter vivas. Não num museu. Não atrás de vidro. Mas à mesa, exatamente onde pertencem.",
+      "secrets.tradition.p6":
+        "A nossa Experiência de Entradas Portuguesas reúne três clássicos que contam a história de Portugal melhor do que qualquer guia.",
+
+      "secrets.ameijoas.title": "Amêijoas à Bulhão Pato",
+      "secrets.ameijoas.subtitle": "O prato que leva o nome de um poeta",
+      "secrets.ameijoas.p1":
+        "Um dos pratos de marisco mais queridos de Portugal leva o nome do poeta do século XIX Raimundo António de Bulhão Pato.",
+      "secrets.ameijoas.p2":
+        "Ninguém sabe ao certo se criou a receita ou se apenas adorava comê-la, mas o seu nome ficou ligado a ela para sempre.",
+      "secrets.ameijoas.p3":
+        "Amêijoas frescas são cozinhadas com azeite, alho e generosas quantidades de coentros — uma erva que os cozinheiros portugueses adoram há séculos, especialmente no sul.",
+      "secrets.ameijoas.p4":
+        "A receita é simples. E é exatamente esse o ponto. A cozinha portuguesa nunca foi sobre esconder ingredientes — é sobre deixar os bons ingredientes falarem por si.",
+      "secrets.ameijoas.p5":
+        "Tradicionalmente coloca-se um cesto de pão por perto, porque deixar o molho para trás seria quase um crime.",
+
+      "secrets.padron.title": "Pimentos Padrón",
+      "secrets.padron.subtitle": "O pequeno jogo português",
+      "secrets.padron.p1":
+        "Estes pequenos pimentos chegaram à Península Ibérica há séculos e tornaram-se companheiros favoritos de longos almoços em família e encontros com amigos.",
+      "secrets.padron.p2": "A maioria é doce. Alguns são surpreendentemente picantes. Ninguém sabe qual vai sair.",
+      "secrets.padron.quote": "«Uns picam, outros não.»",
+      "secrets.padron.p3": "Cada prato torna-se um jogo. Alguém leva sempre o picante. Todos riem.",
+      "secrets.padron.p4":
+        "A tradição sobreviveu gerações porque transforma um simples petisco numa experiência partilhada. E a comida portuguesa sempre foi tanto sobre pessoas como sobre receitas.",
+
+      "secrets.tabua.title": "Tábua Mista",
+      "secrets.tabua.subtitle": "Um sabor do campo",
+      "secrets.tabua.p1":
+        "Antes de Portugal se tornar famoso pelo turismo, a maioria das pessoas vivia muito mais perto da terra.",
+      "secrets.tabua.p2":
+        "As famílias criavam animais, curavam carnes, faziam queijos e preservavam comida para os longos invernos. Essas tradições ainda vivem na melhor charcutaria do país.",
+      "secrets.tabua.p3":
+        "Uma tábua mista tradicional reúne presunto curado, enchidos regionais e queijos portugueses numa só tábua.",
+      "secrets.tabua.p4":
+        "Muitos dos melhores enchidos vêm de porcos ibéricos de raça negra que vagueiam por bosques de sobreiros e se alimentam naturalmente de bolotas.",
+      "secrets.tabua.p5":
+        "Este método lento e tradicional cria o sabor rico e a textura delicada que tornaram o presunto ibérico famoso em toda a Europa. Os queijos contam a sua própria história — dezenas de variedades regionais, de queijos de montanha amanteigados a queijos curados firmes feitos com métodos que mudaram pouco ao longo dos séculos.",
+
+      "secrets.experience.title": "Experimenta os três juntos",
+      "secrets.experience.lead":
+        "Para visitantes, é uma das formas mais fáceis de descobrir sabores portugueses autênticos. Para locais, é um lembrete de tradições que valem a pena manter.",
+      "secrets.experience.offer": "Experiência de Entradas Portuguesas — 34,99€",
+      "secrets.experience.closing":
+        "Porque a melhor forma de compreender Portugal não é lendo sobre ele. É partilhando-o à mesa.",
 
       "about.kicker": "Sobre Julio's",
       "about.title": "Uma história de paixão e partilha",
@@ -205,6 +288,7 @@
         "Seafood for Two (€28.99) and Wine & Petiscos Experience (€47.99). Book Julio's special offers via WhatsApp.",
 
       "nav.about": "About",
+      "nav.secrets": "Secrets",
       "nav.promos": "Offers",
       "nav.gallery": "Flavours",
       "nav.events": "Events",
@@ -258,6 +342,88 @@
         "Hello! I would like to book the \"Wine & Petiscos Experience\" offer (€47.99).",
       "promos.marisco.alt": "Seafood for two at Julio's",
       "promos.wine.alt": "Wine & Petiscos Experience at Julio's",
+
+      "meta.secrets.title": "Secrets of Portuguese Cuisine — Julio's · Lisbon",
+      "meta.secrets.description":
+        "Portuguese Starter Experience: Tábua Mista, Amêijoas à Bulhão Pato and Padrón Peppers for €34.99. Book at Julio's, Campo Pequeno.",
+
+      "secrets.kicker": "Secrets of Portuguese Cuisine",
+      "secrets.title": "Three dishes every Portuguese knows",
+      "secrets.lead":
+        "Not all Portuguese food is codfish and pastel de nata. Discover three local favourites that have been shared around Portuguese tables for generations: fresh clams cooked with garlic and coriander, smoky cured meats and cheeses, and the famous Padrón peppers — where one in ten might surprise you.",
+      "secrets.price": "Taste all three together for just €34.99",
+      "secrets.includes.title": "Includes:",
+      "secrets.includes.1": "Tábua Mista (cured meats, cheeses & charcuterie)",
+      "secrets.includes.2": "Amêijoas à Bulhão Pato",
+      "secrets.includes.3": "Pimentos Padrón",
+      "secrets.discover": "Discover the story",
+      "secrets.readmore": "Read more",
+      "secrets.cardBtn": "View story",
+      "secrets.promoBtn": "Taste all three together — €34.99",
+      "secrets.order": "Book this experience",
+      "secrets.whatsapp":
+        "Hello! I would like to book the Portuguese Starter Experience (€34.99).",
+      "secrets.hero.alt": "Portuguese starter experience at Julio's",
+      "secrets.ameijoas.alt": "Amêijoas à Bulhão Pato",
+      "secrets.padron.alt": "Pimentos Padrón",
+      "secrets.tabua.alt": "Tábua Mista cured meats and cheeses",
+
+      "secrets.page.title": "The Secrets of Portuguese Cuisine",
+      "secrets.tradition.title": "A tradition worth preserving",
+      "secrets.tradition.p1":
+        "Finding truly traditional Portuguese food is becoming harder every year.",
+      "secrets.tradition.p2":
+        "Across Europe, old family restaurants are disappearing, replaced by international menus that look almost identical whether you are in Lisbon, Berlin, London or Amsterdam.",
+      "secrets.tradition.p3": "The result is convenient. But something important gets lost.",
+      "secrets.tradition.p4":
+        "The recipes, stories and flavours that generations grew up with slowly disappear from everyday life.",
+      "secrets.tradition.p5":
+        "At Julio's, we believe these traditions are worth keeping alive. Not in a museum. Not behind glass. But on the table, exactly where they belong.",
+      "secrets.tradition.p6":
+        "Our Portuguese Starter Experience brings together three classics that tell the story of Portugal better than any guidebook.",
+
+      "secrets.ameijoas.title": "Amêijoas à Bulhão Pato",
+      "secrets.ameijoas.subtitle": "The dish named after a poet",
+      "secrets.ameijoas.p1":
+        "One of Portugal's most beloved seafood dishes is named after a 19th-century poet, Raimundo António de Bulhão Pato.",
+      "secrets.ameijoas.p2":
+        "Nobody is quite sure whether he created the recipe or simply loved eating it, but his name became attached to it forever.",
+      "secrets.ameijoas.p3":
+        "Fresh clams are cooked with olive oil, garlic and generous amounts of coriander — a herb that Portuguese cooks have adored for centuries, especially in the southern regions.",
+      "secrets.ameijoas.p4":
+        "The recipe is simple. And that is exactly the point. Portuguese cuisine has never been about hiding ingredients. It is about letting great ingredients speak for themselves.",
+      "secrets.ameijoas.p5":
+        "A basket of bread is traditionally placed nearby because leaving the sauce behind would be considered almost a crime.",
+
+      "secrets.padron.title": "Pimentos Padrón",
+      "secrets.padron.subtitle": "The little Portuguese gamble",
+      "secrets.padron.p1":
+        "These small peppers arrived on the Iberian Peninsula centuries ago and became a favourite companion to long family lunches and gatherings with friends.",
+      "secrets.padron.p2": "Most are sweet. A few are surprisingly spicy. Nobody knows which one they will get.",
+      "secrets.padron.quote": "\"Some are hot, some are not.\"",
+      "secrets.padron.p3": "Every plate becomes a game. Someone always gets the spicy one. Everyone laughs.",
+      "secrets.padron.p4":
+        "The tradition has survived for generations because it turns a simple snack into a shared experience. And Portuguese food has always been as much about people as it is about recipes.",
+
+      "secrets.tabua.title": "Tábua Mista",
+      "secrets.tabua.subtitle": "A taste of the countryside",
+      "secrets.tabua.p1":
+        "Before Portugal became famous for tourism, most people lived much closer to the land.",
+      "secrets.tabua.p2":
+        "Families raised animals, cured meats, made cheeses and preserved food for long winters. Those traditions still live on in the country's finest charcuterie.",
+      "secrets.tabua.p3":
+        "A traditional tábua mista brings together cured ham, regional sausages and Portuguese cheeses on one board.",
+      "secrets.tabua.p4":
+        "Many of the finest cured meats come from black Iberian pigs that roam oak forests and feed naturally on acorns.",
+      "secrets.tabua.p5":
+        "This slow traditional method creates the rich flavour and delicate texture that made Iberian ham famous throughout Europe. The cheeses tell their own story — dozens of regional varieties, from buttery mountain cheeses to firm aged cheeses made using methods that have changed little for centuries.",
+
+      "secrets.experience.title": "Experience all three together",
+      "secrets.experience.lead":
+        "For visitors, this is one of the easiest ways to discover authentic Portuguese flavours. For locals, it is a reminder of traditions worth keeping.",
+      "secrets.experience.offer": "Portuguese Starter Experience — €34.99",
+      "secrets.experience.closing":
+        "Because the best way to understand Portugal is not by reading about it. It's by sharing it around a table.",
 
       "about.kicker": "About Julio's",
       "about.title": "A story of passion and sharing",
@@ -425,6 +591,9 @@
     } else if (page === "promos") {
       titleKey = "meta.promos.title";
       descKey = "meta.promos.description";
+    } else if (page === "secrets") {
+      titleKey = "meta.secrets.title";
+      descKey = "meta.secrets.description";
     }
     document.title = t(titleKey);
 
@@ -444,7 +613,7 @@
       ogLocale.content = currentLang === "pt" ? "pt_PT" : "en_GB";
     }
 
-    if (page !== "menu" && page !== "promos") {
+    if (page !== "menu" && page !== "promos" && page !== "secrets") {
       setMetaContent("meta-keywords", t("meta.index.keywords"));
     }
   }
