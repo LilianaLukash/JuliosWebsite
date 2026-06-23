@@ -1,7 +1,7 @@
 (function (global) {
   "use strict";
 
-  var SITE_URL = "https://lilianalukash.github.io/JuliosWebsite";
+  var SITE_URL = "https://julios.pt";
   var STORAGE_KEY = "julios-lang";
 
   var translations = {
@@ -74,9 +74,9 @@
       "promos.marisco.alt": "Marisco para dois no Julio's",
       "promos.wine.alt": "Wine & Petiscos Experience no Julio's",
 
-      "meta.secrets.title": "Segredos da Cozinha Portuguesa — Julio's · Lisboa",
+      "meta.secrets.title": "Os Segredos da Cozinha Portuguesa — Julio's · Campo Pequeno, Lisboa",
       "meta.secrets.description":
-        "Experiência de Entradas Portuguesas: Tábua Mista, Amêijoas à Bulhão Pato e Pimentos Padrón por 34,99€. Reserva no Julio's, Campo Pequeno.",
+        "Os Segredos da Cozinha Portuguesa no Julio's: Tábua Mista, Amêijoas à Bulhão Pato e Pimentos Padrón por 34,99€. Campo Pequeno, Lisboa.",
 
       "secrets.kicker": "Segredos da Cozinha Portuguesa",
       "secrets.title": "Três pratos que todo português conhece",
@@ -90,11 +90,11 @@
       "secrets.discover": "Descobre a história",
       "secrets.readmore": "Ler mais",
       "secrets.cardBtn": "Ver história",
-      "secrets.promoBtn": "Prova os três juntos — 34,99€",
+      "secrets.promoBtn": "Os Três Segredos — 34,99€",
       "secrets.order": "Reservar experiência",
       "secrets.whatsapp":
-        "Olá! Gostaria de reservar a Experiência de Entradas Portuguesas (34,99€).",
-      "secrets.hero.alt": "Experiência de entradas portuguesas no Julio's",
+        "Olá! Gostaria de reservar «Os Três Segredos» (34,99€).",
+      "secrets.hero.alt": "Os Três Segredos no Julio's",
       "secrets.ameijoas.alt": "Amêijoas à Bulhão Pato",
       "secrets.padron.alt": "Pimentos Padrón",
       "secrets.tabua.alt": "Tábua Mista de enchidos e queijos",
@@ -111,7 +111,7 @@
       "secrets.tradition.p5":
         "No Julio's, acreditamos que estas tradições valem a pena manter vivas. Não num museu. Não atrás de vidro. Mas à mesa, exatamente onde pertencem.",
       "secrets.tradition.p6":
-        "A nossa Experiência de Entradas Portuguesas reúne três clássicos que contam a história de Portugal melhor do que qualquer guia.",
+        "«Os Três Segredos» reúne três clássicos que contam a história de Portugal melhor do que qualquer guia.",
 
       "secrets.ameijoas.title": "Amêijoas à Bulhão Pato",
       "secrets.ameijoas.subtitle": "O prato que leva o nome de um poeta",
@@ -152,7 +152,8 @@
       "secrets.experience.title": "Experimenta os três juntos",
       "secrets.experience.lead":
         "Para visitantes, é uma das formas mais fáceis de descobrir sabores portugueses autênticos. Para locais, é um lembrete de tradições que valem a pena manter.",
-      "secrets.experience.offer": "Experiência de Entradas Portuguesas — 34,99€",
+      "secrets.experience.offer": "Os Três Segredos — 34,99€",
+      "secrets.experience.formal": "Experiência de Entradas Portuguesas",
       "secrets.experience.closing":
         "Porque a melhor forma de compreender Portugal não é lendo sobre ele. É partilhando-o à mesa.",
 
@@ -272,7 +273,37 @@
 
       "footer.copy": "© Julio's · Lisboa & Lagos",
       "footer.privacy": "Política de Privacidade",
-      "footer.terms": "Termos & Condições"
+      "footer.terms": "Termos & Condições",
+
+      "meta.legal.title": "Política de Privacidade e Termos — Julio's · Lisboa",
+      "meta.legal.description":
+        "Política de Privacidade e Termos & Condições do Julio's, Campo Pequeno, Lisboa.",
+
+      "legal.privacy.title": "Política de Privacidade",
+      "legal.privacy.updated": "Última atualização: 23 de junho de 2026",
+      "legal.privacy.responsible":
+        "Responsável: Julio's Restaurante, Avenida Elias Garcia, 19B, 1000-147 Lisboa. Contacto: +351 916 475 896 (WhatsApp).",
+      "legal.privacy.data":
+        "Dados recolhidos: dados de reserva (nome, telefone) e dados de navegação via cookies.",
+      "legal.privacy.purpose":
+        "Finalidades e base legal: gerir reservas (execução de contrato); medir e melhorar publicidade e desempenho do site (consentimento).",
+      "legal.privacy.cookies":
+        "Cookies de terceiros: usamos Google Ads e Google Analytics para medir conversões. Pode recusar cookies não essenciais no banner de consentimento ou no navegador.",
+      "legal.privacy.retention":
+        "Conservação: apenas pelo período necessário ou exigido por lei.",
+      "legal.privacy.rights":
+        "Direitos: acesso, retificação, apagamento, limitação, oposição e portabilidade — contacte +351 916 475 896. Pode reclamar à CNPD.",
+
+      "legal.terms.title": "Termos & Condições",
+      "legal.terms.offer":
+        "Oferta: «Os Três Segredos» inclui Tábua Mista, Amêijoas à Bulhão Pato e Pimentos Padrón, por 34,99€, indicado para partilha entre duas pessoas.",
+      "legal.terms.prices":
+        "Preços: incluem IVA. Oferta sujeita a disponibilidade, pode ser alterada sem aviso. Ingredientes podem ser substituídos conforme disponibilidade.",
+      "legal.terms.booking": "Reservas: sujeitas a confirmação do Julio's.",
+      "legal.terms.allergens":
+        "Alergénios: os pratos podem conter alergénios — informe a equipa antes do pedido.",
+      "legal.terms.law":
+        "Lei aplicável: lei portuguesa. Litígios de consumo: entidade RAL competente. Mais info em www.consumidor.gov.pt."
     },
     en: {
       "meta.index.title": "Julio's – Restaurant in Campo Pequeno, Lisbon",
@@ -343,9 +374,9 @@
       "promos.marisco.alt": "Seafood for two at Julio's",
       "promos.wine.alt": "Wine & Petiscos Experience at Julio's",
 
-      "meta.secrets.title": "Secrets of Portuguese Cuisine — Julio's · Lisbon",
+      "meta.secrets.title": "The Secrets of Portuguese Cuisine — Julio's · Campo Pequeno, Lisbon",
       "meta.secrets.description":
-        "Portuguese Starter Experience: Tábua Mista, Amêijoas à Bulhão Pato and Padrón Peppers for €34.99. Book at Julio's, Campo Pequeno.",
+        "The Secrets of Portuguese Cuisine at Julio's: Tábua Mista, Amêijoas à Bulhão Pato and Padrón Peppers for €34.99. Campo Pequeno, Lisbon.",
 
       "secrets.kicker": "Secrets of Portuguese Cuisine",
       "secrets.title": "Three dishes every Portuguese knows",
@@ -359,11 +390,11 @@
       "secrets.discover": "Discover the story",
       "secrets.readmore": "Read more",
       "secrets.cardBtn": "View story",
-      "secrets.promoBtn": "Taste all three together — €34.99",
+      "secrets.promoBtn": "The Three Secrets — €34.99",
       "secrets.order": "Book this experience",
       "secrets.whatsapp":
-        "Hello! I would like to book the Portuguese Starter Experience (€34.99).",
-      "secrets.hero.alt": "Portuguese starter experience at Julio's",
+        "Hello! I would like to book \"The Three Secrets\" (€34.99).",
+      "secrets.hero.alt": "The Three Secrets at Julio's",
       "secrets.ameijoas.alt": "Amêijoas à Bulhão Pato",
       "secrets.padron.alt": "Pimentos Padrón",
       "secrets.tabua.alt": "Tábua Mista cured meats and cheeses",
@@ -380,7 +411,7 @@
       "secrets.tradition.p5":
         "At Julio's, we believe these traditions are worth keeping alive. Not in a museum. Not behind glass. But on the table, exactly where they belong.",
       "secrets.tradition.p6":
-        "Our Portuguese Starter Experience brings together three classics that tell the story of Portugal better than any guidebook.",
+        "\"The Three Secrets\" brings together three classics that tell the story of Portugal better than any guidebook.",
 
       "secrets.ameijoas.title": "Amêijoas à Bulhão Pato",
       "secrets.ameijoas.subtitle": "The dish named after a poet",
@@ -421,7 +452,8 @@
       "secrets.experience.title": "Experience all three together",
       "secrets.experience.lead":
         "For visitors, this is one of the easiest ways to discover authentic Portuguese flavours. For locals, it is a reminder of traditions worth keeping.",
-      "secrets.experience.offer": "Portuguese Starter Experience — €34.99",
+      "secrets.experience.offer": "The Three Secrets — €34.99",
+      "secrets.experience.formal": "Portuguese Starter Experience",
       "secrets.experience.closing":
         "Because the best way to understand Portugal is not by reading about it. It's by sharing it around a table.",
 
@@ -541,7 +573,37 @@
 
       "footer.copy": "© Julio's · Lisbon & Lagos",
       "footer.privacy": "Privacy Policy",
-      "footer.terms": "Terms & Conditions"
+      "footer.terms": "Terms & Conditions",
+
+      "meta.legal.title": "Privacy Policy & Terms — Julio's · Lisbon",
+      "meta.legal.description":
+        "Privacy Policy and Terms & Conditions for Julio's, Campo Pequeno, Lisbon.",
+
+      "legal.privacy.title": "Privacy Policy",
+      "legal.privacy.updated": "Last updated: 23 June 2026",
+      "legal.privacy.responsible":
+        "Data controller: Julio's Restaurante, Avenida Elias Garcia, 19B, 1000-147 Lisbon. Contact: +351 916 475 896 (WhatsApp).",
+      "legal.privacy.data":
+        "Data collected: reservation details (name, phone) and browsing data via cookies.",
+      "legal.privacy.purpose":
+        "Purposes and legal basis: managing reservations (contract performance); measuring and improving advertising and site performance (consent).",
+      "legal.privacy.cookies":
+        "Third-party cookies: we use Google Ads and Google Analytics to measure conversions. You may refuse non-essential cookies via the consent banner or your browser.",
+      "legal.privacy.retention":
+        "Retention: only for as long as necessary or required by law.",
+      "legal.privacy.rights":
+        "Rights: access, rectification, erasure, restriction, objection and portability — contact +351 916 475 896. You may lodge a complaint with the CNPD.",
+
+      "legal.terms.title": "Terms & Conditions",
+      "legal.terms.offer":
+        "Offer: \"The Three Secrets\" includes Tábua Mista, Amêijoas à Bulhão Pato and Padrón Peppers for €34.99, intended for sharing between two people.",
+      "legal.terms.prices":
+        "Prices: include VAT. Offer subject to availability and may change without notice. Ingredients may be substituted depending on availability.",
+      "legal.terms.booking": "Reservations: subject to confirmation by Julio's.",
+      "legal.terms.allergens":
+        "Allergens: dishes may contain allergens — please inform our team before ordering.",
+      "legal.terms.law":
+        "Applicable law: Portuguese law. Consumer disputes: competent ADR entity. More info at www.consumidor.gov.pt."
     }
   };
 
@@ -594,6 +656,9 @@
     } else if (page === "secrets") {
       titleKey = "meta.secrets.title";
       descKey = "meta.secrets.description";
+    } else if (page === "legal") {
+      titleKey = "meta.legal.title";
+      descKey = "meta.legal.description";
     }
     document.title = t(titleKey);
 
@@ -613,7 +678,7 @@
       ogLocale.content = currentLang === "pt" ? "pt_PT" : "en_GB";
     }
 
-    if (page !== "menu" && page !== "promos" && page !== "secrets") {
+    if (page !== "menu" && page !== "promos" && page !== "secrets" && page !== "legal") {
       setMetaContent("meta-keywords", t("meta.index.keywords"));
     }
   }
@@ -717,7 +782,7 @@
       ],
       description: t("meta.index.description"),
       inLanguage: [currentLang === "pt" ? "pt-PT" : "en-GB"],
-      sameAs: ["https://github.com/LilianaLukash/JuliosWebsite"]
+      sameAs: ["https://julios.pt"]
     };
 
     script.textContent = JSON.stringify(schema);
