@@ -282,12 +282,12 @@
       "loc.lisboa": "Lisboa",
       "loc.lagos": "Lagos",
 
-      "meta.lagos.title": "Julio's Lagos — Restaurante no Algarve",
+      "meta.lagos.title": "Julio's Lagos — Restaurante em Lagos, Algarve",
       "meta.lagos.description":
-        "Julio's Lagos — petiscos, peixe grelhado, arroz de marisco e paella num espaço de amizade e boa mesa. Reserva por WhatsApp.",
-      "meta.lagos.menu.title": "Ementa — Julio's Lagos",
+        "Restaurante Julio's em Lagos (Algarve): petiscos, peixe grelhado, arroz de marisco e paella. Praceta João da Costa Reis. Reserva por WhatsApp.",
+      "meta.lagos.menu.title": "Ementa — Julio's Lagos · Algarve",
       "meta.lagos.menu.description":
-        "Consulta a ementa do Julio's Lagos: tábuas, petiscos, saladas, pratos principais e sobremesas.",
+        "Ementa do Julio's Lagos: tábuas, petiscos, saladas, peixe, marisco, paella e sobremesas. Praceta João da Costa Reis, Lagos.",
 
       "lagos.intro.location": "Lagos · Algarve",
       "lagos.hero.tagline": "Lagos · Algarve",
@@ -645,12 +645,12 @@
       "loc.lisboa": "Lisbon",
       "loc.lagos": "Lagos",
 
-      "meta.lagos.title": "Julio's Lagos — Restaurant in the Algarve",
+      "meta.lagos.title": "Julio's Lagos — Restaurant in Lagos, Algarve",
       "meta.lagos.description":
-        "Julio's Lagos — petiscos, grilled fish, seafood rice and paella in a warm, friendly space. Book via WhatsApp.",
-      "meta.lagos.menu.title": "Menu — Julio's Lagos",
+        "Julio's restaurant in Lagos, Algarve: petiscos, grilled fish, seafood rice and paella. Praceta João da Costa Reis. Book via WhatsApp.",
+      "meta.lagos.menu.title": "Menu — Julio's Lagos · Algarve",
       "meta.lagos.menu.description":
-        "Browse Julio's Lagos menu: boards, petiscos, salads, mains and desserts.",
+        "Julio's Lagos menu: boards, petiscos, salads, fish, seafood, paella and desserts. Praceta João da Costa Reis, Lagos.",
 
       "lagos.intro.location": "Lagos · Algarve",
       "lagos.hero.tagline": "Lagos · Algarve",
@@ -764,14 +764,16 @@
     return path === "" ? "index.html" : path;
   }
 
-  function pageUrl(lang) {
+  function pageUrl(lang, withLang) {
     var pathname = global.location.pathname || "/";
     var clean = pathname.replace(/index\.html$/i, "");
     if (clean === "") clean = "/";
     if (!/\.html$/i.test(clean) && clean.charAt(clean.length - 1) !== "/") {
       clean += "/";
     }
-    return SITE_URL + clean + "?lang=" + lang;
+    var url = SITE_URL + clean;
+    if (withLang) url += "?lang=" + lang;
+    return url;
   }
 
   function isLagosLocation() {
@@ -811,12 +813,26 @@
     document.documentElement.lang = currentLang === "pt" ? "pt" : "en";
 
     var canonical = document.getElementById("canonical-link");
-    if (canonical) canonical.href = pageUrl(currentLang);
+    if (canonical) canonical.href = pageUrl(currentLang, false);
+
+    var ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute("content", pageUrl(currentLang, false));
 
     var ogLocale = document.querySelector('meta[property="og:locale"]');
     if (ogLocale) {
       ogLocale.content = currentLang === "pt" ? "pt_PT" : "en_GB";
     }
+
+    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(function (link) {
+      var hl = link.getAttribute("hreflang");
+      if (hl === "pt-PT" || hl === "pt") {
+        link.href = pageUrl("pt", false);
+      } else if (hl === "en-GB" || hl === "en") {
+        link.href = pageUrl("en", true);
+      } else if (hl === "x-default") {
+        link.href = pageUrl("pt", false);
+      }
+    });
 
     if (
       page !== "menu" &&
@@ -907,7 +923,7 @@
         "@context": "https://schema.org",
         "@type": "Restaurant",
         name: "Julio's Lagos",
-        image: SITE_URL + "/img/lagos/exterior-1.png",
+        image: SITE_URL + "/img/lagos/exterior-1.jpg",
         url: SITE_URL + "/lagos/",
         telephone: "+351916475896",
         priceRange: "€€",
@@ -925,16 +941,43 @@
           latitude: 37.1069131,
           longitude: -8.6804093
         },
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: "Monday",
+            opens: "12:00",
+            closes: "00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: "Wednesday",
+            opens: "12:00",
+            closes: "00:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Thursday", "Friday", "Sunday"],
+            opens: "12:00",
+            closes: "00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: "Saturday",
+            opens: "12:00",
+            closes: "01:30"
+          }
+        ],
         description: t("meta.lagos.description"),
+        hasMenu: SITE_URL + "/lagos/menu.html",
         inLanguage: [currentLang === "pt" ? "pt-PT" : "en-GB"],
-        sameAs: ["https://julios.pt"]
+        sameAs: ["https://julios.pt", "https://maps.app.goo.gl/KJktdeved2WiD9Fr7"]
       };
     } else {
       schema = {
         "@context": "https://schema.org",
         "@type": "Restaurant",
         name: "Julio's",
-        image: SITE_URL + "/img/IMG_20260221_204051.png",
+        image: SITE_URL + "/img/portuguese-starter-hero.png",
         url: SITE_URL + "/",
         telephone: "+351916475896",
         priceRange: "€€",
@@ -966,6 +1009,7 @@
           }
         ],
         description: t("meta.index.description"),
+        hasMenu: SITE_URL + "/menu.html",
         inLanguage: [currentLang === "pt" ? "pt-PT" : "en-GB"],
         sameAs: ["https://julios.pt"]
       };
