@@ -234,6 +234,8 @@
         "Serás redirecionado para o WhatsApp com a mensagem pronta.",
       "reservations.whatsapp":
         "Olá! Gostaria de fazer uma reserva no Julio's.\n\nNome: {name}\nTelefone: {phone}\nData: {date}\nHora: {time}\nNúmero de pessoas: {guests}",
+      "reservations.whatsapp.lagos":
+        "Olá! Gostaria de fazer uma reserva no Julio's Lagos.\n\nNome: {name}\nTelefone: {phone}\nData: {date}\nHora: {time}\nNúmero de pessoas: {guests}",
 
       "visit.kicker": "Visita-nos",
       "visit.title": "Julio's · Campo Pequeno",
@@ -266,6 +268,8 @@
       "menu.sec.mains": "Pratos Principais",
       "menu.sec.pizza": "Pizzas",
       "menu.sec.desserts": "Sobremesa",
+      "menu.sec.salads": "Saladas",
+      "menu.sec.extras": "Doses Extras",
       "menu.note.burgers":
         "Todos os hambúrgueres acompanham: ketchup, mostarda, maionese e batatas.",
       "menu.note.vat": "Todos os preços com IVA incluído.",
@@ -274,6 +278,65 @@
       "footer.copy": "© Julio's · Lisboa & Lagos",
       "footer.privacy": "Política de Privacidade",
       "footer.terms": "Termos & Condições",
+      "loc.label": "Local",
+      "loc.lisboa": "Lisboa",
+      "loc.lagos": "Lagos",
+
+      "meta.lagos.title": "Julio's Lagos — Restaurante no Algarve",
+      "meta.lagos.description":
+        "Julio's Lagos — petiscos, peixe grelhado, arroz de marisco e paella num espaço de amizade e boa mesa. Reserva por WhatsApp.",
+      "meta.lagos.menu.title": "Ementa — Julio's Lagos",
+      "meta.lagos.menu.description":
+        "Consulta a ementa do Julio's Lagos: tábuas, petiscos, saladas, pratos principais e sobremesas.",
+
+      "lagos.intro.location": "Lagos · Algarve",
+      "lagos.hero.tagline": "Lagos · Algarve",
+      "lagos.hero.title": "Onde a amizade<br />se senta à mesa.",
+      "lagos.hero.subtitle":
+        "Boa comida, espírito familiar e aquele sorriso de quem te recebe como se fosses de casa — bem-vindo ao Julio's Lagos.",
+      "lagos.hero.meta1": "PETISCOS & MARISCO",
+      "lagos.hero.meta2": "PEIXE GRELHADO",
+      "lagos.hero.meta3": "PAELLA & CONVÍVIO",
+
+      "lagos.about.kicker": "Sobre Julio's Lagos",
+      "lagos.about.title": "Uma mesa que nasceu de uma amizade",
+      "lagos.about.lead":
+        "O Julio's Lagos é muito mais do que um restaurante — é o sítio onde a amizade, a família e a paixão pela boa gastronomia se sentam lado a lado.",
+      "lagos.about.p1":
+        "A história começou muito antes da abertura. Nasceu de uma amizade genuína e de uma visão partilhada: a de que uma boa refeição aproxima famílias, fortalece amizades e cria ligações novas — às vezes até melhores do que qualquer app de networking.",
+      "lagos.about.p2":
+        "Entre essas pessoas está o Dr. João Pedro César Machado, co-proprietário e apaixonado por Lagos. Depois de se mudar para a cidade, há mais de dois anos, entrou neste espaço pela primeira vez e viu imediatamente o potencial: ali podia nascer um lugar onde a boa comida, o acolhimento e o espírito familiar fossem os verdadeiros protagonistas.",
+      "lagos.about.p3":
+        "Com perseverança, dedicação e o apoio de amigos e familiares, a visão tornou-se realidade. Assim nasceu o Julio's Lagos — com os mesmos valores que estiveram na origem: proximidade, autenticidade, respeito pelas pessoas e amor pela gastronomia.",
+      "lagos.about.p4":
+        "Aqui cada cliente deve sentir-se em casa. Gostamos de receber quem nos visita como recebemos os nossos amigos. Muitos chegam como clientes e regressam como amigos — e isso, francamente, é o melhor feedback que um restaurante pode ter.",
+      "lagos.about.p5":
+        "A nossa cozinha mistura tradições e sabores do mundo: peixe grelhado, arroz de marisco, paella, petiscos e pratos preparados com ingredientes selecionados, atenção ao detalhe e, acima de tudo, paixão. Mais do que servir refeições, queremos proporcionar experiências — à mesa, exatamente onde a amizade se senta.",
+      "lagos.owner.label": "Co-proprietário",
+      "lagos.owner.role": "Co-proprietário de Julio's Lagos",
+      "lagos.owner.bio":
+        "Apaixonado por Lagos e pela sua atmosfera única, o Dr. João Pedro César Machado acreditou neste espaço desde o primeiro dia — e ajudou a transformar essa visão numa mesa à qual todos são bem-vindos.",
+
+      "lagos.gallery.kicker": "Sabores de Lagos",
+      "lagos.gallery.title": "Do peixe à paella",
+      "lagos.gallery.lead":
+        "Peixe grelhado, arroz de marisco generoso e paella para partilhar — a carta do Julio's Lagos celebra o mar e a mesa.",
+      "lagos.gallery.c1": "Peixe Grelhado",
+      "lagos.gallery.c2": "Arroz de Marisco",
+      "lagos.gallery.c3": "Paella",
+      "lagos.gallery.a1": "Peixe grelhado no Julio's Lagos",
+      "lagos.gallery.a2": "Arroz de marisco no Julio's Lagos",
+      "lagos.gallery.a3": "Paella no Julio's Lagos",
+
+      "lagos.visit.title": "Julio's · Lagos",
+      "lagos.visit.address":
+        "Praceta João da Costa Reis<br />8600-315 Lagos · Algarve",
+      "lagos.visit.hours":
+        "Segunda: 12h00–00h00<br />Terça: Encerrado<br />Quarta: 12h00–00h30<br />Quinta e Sexta: 12h00–00h00<br />Sábado: 12h00–01h30<br />Domingo: 12h00–00h00",
+      "lagos.visit.map.aria": "Mapa — Julio's em Lagos",
+
+      "lagos.menuPage.lead":
+        "Tábuas, petiscos, saladas, pratos principais e sobremesas — a carta do Julio's Lagos.",
 
       "meta.legal.title": "Política de Privacidade e Termos — Julio's · Lisboa",
       "meta.legal.description":
@@ -534,6 +597,8 @@
         "You will be redirected to WhatsApp with a ready-made message.",
       "reservations.whatsapp":
         "Hello! I would like to make a reservation at Julio's.\n\nName: {name}\nPhone: {phone}\nDate: {date}\nTime: {time}\nNumber of guests: {guests}",
+      "reservations.whatsapp.lagos":
+        "Hello! I would like to make a reservation at Julio's Lagos.\n\nName: {name}\nPhone: {phone}\nDate: {date}\nTime: {time}\nNumber of guests: {guests}",
 
       "visit.kicker": "Visit us",
       "visit.title": "Julio's · Campo Pequeno",
@@ -566,6 +631,8 @@
       "menu.sec.mains": "Main Courses",
       "menu.sec.pizza": "Pizzas",
       "menu.sec.desserts": "Dessert",
+      "menu.sec.salads": "Salads",
+      "menu.sec.extras": "Extras",
       "menu.note.burgers":
         "All burgers are served with ketchup, mustard, mayonnaise and fries.",
       "menu.note.vat": "All prices include VAT.",
@@ -574,6 +641,65 @@
       "footer.copy": "© Julio's · Lisbon & Lagos",
       "footer.privacy": "Privacy Policy",
       "footer.terms": "Terms & Conditions",
+      "loc.label": "Location",
+      "loc.lisboa": "Lisbon",
+      "loc.lagos": "Lagos",
+
+      "meta.lagos.title": "Julio's Lagos — Restaurant in the Algarve",
+      "meta.lagos.description":
+        "Julio's Lagos — petiscos, grilled fish, seafood rice and paella in a warm, friendly space. Book via WhatsApp.",
+      "meta.lagos.menu.title": "Menu — Julio's Lagos",
+      "meta.lagos.menu.description":
+        "Browse Julio's Lagos menu: boards, petiscos, salads, mains and desserts.",
+
+      "lagos.intro.location": "Lagos · Algarve",
+      "lagos.hero.tagline": "Lagos · Algarve",
+      "lagos.hero.title": "Where friendship<br />takes a seat.",
+      "lagos.hero.subtitle":
+        "Great food, a family spirit and the smile of people who welcome you like you're home — welcome to Julio's Lagos.",
+      "lagos.hero.meta1": "PETISCOS & SEAFOOD",
+      "lagos.hero.meta2": "GRILLED FISH",
+      "lagos.hero.meta3": "PAELLA & COMPANY",
+
+      "lagos.about.kicker": "About Julio's Lagos",
+      "lagos.about.title": "A table born from friendship",
+      "lagos.about.lead":
+        "Julio's Lagos is much more than a restaurant — it is where friendship, family and a passion for good food sit side by side.",
+      "lagos.about.p1":
+        "The story began long before opening day. It grew from a genuine friendship and a shared belief: that a good meal brings families closer, strengthens friendships and creates new connections — sometimes better than any networking app.",
+      "lagos.about.p2":
+        "Among those people is Dr. João Pedro César Machado, co-owner and a true lover of Lagos. After moving to the city more than two years ago, he walked into this space for the first time and immediately saw its potential: a place where good food, warm hospitality and a family spirit would be the real stars.",
+      "lagos.about.p3":
+        "With perseverance, dedication and the support of friends and family, that vision became reality. Julio's Lagos was born — with the same values that started it all: closeness, authenticity, respect for people and love for gastronomy.",
+      "lagos.about.p4":
+        "Here every guest should feel at home. We like to welcome visitors the way we welcome our friends. Many arrive as customers and return as friends — and honestly, that is the best feedback a restaurant can get.",
+      "lagos.about.p5":
+        "Our kitchen mixes traditions and flavours from around the world: grilled fish, seafood rice, paella, petiscos and dishes made with carefully chosen ingredients, attention to detail and, above all, passion. More than serving meals, we want to create experiences — at the table, exactly where friendship takes a seat.",
+      "lagos.owner.label": "Co-owner",
+      "lagos.owner.role": "Co-owner of Julio's Lagos",
+      "lagos.owner.bio":
+        "Passionate about Lagos and its unique atmosphere, Dr. João Pedro César Machado believed in this space from day one — and helped turn that vision into a table where everyone is welcome.",
+
+      "lagos.gallery.kicker": "Flavours of Lagos",
+      "lagos.gallery.title": "From fish to paella",
+      "lagos.gallery.lead":
+        "Grilled fish, generous seafood rice and paella to share — Julio's Lagos celebrates the sea and the table.",
+      "lagos.gallery.c1": "Grilled Fish",
+      "lagos.gallery.c2": "Seafood Rice",
+      "lagos.gallery.c3": "Paella",
+      "lagos.gallery.a1": "Grilled fish at Julio's Lagos",
+      "lagos.gallery.a2": "Seafood rice at Julio's Lagos",
+      "lagos.gallery.a3": "Paella at Julio's Lagos",
+
+      "lagos.visit.title": "Julio's · Lagos",
+      "lagos.visit.address":
+        "Praceta João da Costa Reis<br />8600-315 Lagos · Algarve",
+      "lagos.visit.hours":
+        "Monday: 12:00–00:00<br />Tuesday: Closed<br />Wednesday: 12:00–00:30<br />Thursday & Friday: 12:00–00:00<br />Saturday: 12:00–01:30<br />Sunday: 12:00–00:00",
+      "lagos.visit.map.aria": "Map — Julio's in Lagos",
+
+      "lagos.menuPage.lead":
+        "Boards, petiscos, salads, mains and desserts — the Julio's Lagos menu.",
 
       "meta.legal.title": "Privacy Policy & Terms — Julio's · Lisbon",
       "meta.legal.description":
@@ -639,9 +765,17 @@
   }
 
   function pageUrl(lang) {
-    var base = SITE_URL + "/" + (pagePath() === "index.html" ? "" : pagePath());
-    base = base.replace(/\/$/, "") || SITE_URL + "/";
-    return base + "?lang=" + lang;
+    var pathname = global.location.pathname || "/";
+    var clean = pathname.replace(/index\.html$/i, "");
+    if (clean === "") clean = "/";
+    if (!/\.html$/i.test(clean) && clean.charAt(clean.length - 1) !== "/") {
+      clean += "/";
+    }
+    return SITE_URL + clean + "?lang=" + lang;
+  }
+
+  function isLagosLocation() {
+    return document.body.getAttribute("data-location") === "lagos";
   }
 
   function updateMeta(page) {
@@ -659,6 +793,12 @@
     } else if (page === "legal") {
       titleKey = "meta.legal.title";
       descKey = "meta.legal.description";
+    } else if (page === "lagos") {
+      titleKey = "meta.lagos.title";
+      descKey = "meta.lagos.description";
+    } else if (page === "lagos-menu") {
+      titleKey = "meta.lagos.menu.title";
+      descKey = "meta.lagos.menu.description";
     }
     document.title = t(titleKey);
 
@@ -678,7 +818,14 @@
       ogLocale.content = currentLang === "pt" ? "pt_PT" : "en_GB";
     }
 
-    if (page !== "menu" && page !== "promos" && page !== "secrets" && page !== "legal") {
+    if (
+      page !== "menu" &&
+      page !== "promos" &&
+      page !== "secrets" &&
+      page !== "legal" &&
+      page !== "lagos" &&
+      page !== "lagos-menu"
+    ) {
       setMetaContent("meta-keywords", t("meta.index.keywords"));
     }
   }
@@ -725,19 +872,28 @@
     updateMapPopup();
     updateSchema();
 
-    if (global.JuliosMenu && document.body.getAttribute("data-page") === "menu") {
+    if (global.JuliosMenu && typeof global.JuliosMenu.render === "function") {
       global.JuliosMenu.render(currentLang);
     }
   }
 
   function updateMapPopup() {
     if (!mapMarker || !global.L) return;
-    var html =
-      "<strong>Julio's</strong><br>Avenida Elias Garcia, 19B, 1000-147 " +
-      (currentLang === "pt" ? "Lisboa" : "Lisbon") +
-      '<br><a href="https://www.google.com/maps/search/?api=1&query=38.7394912,-9.1441767" target="_blank" rel="noopener">' +
-      t("visit.popup.directions") +
-      "</a>";
+    var html;
+    if (isLagosLocation()) {
+      html =
+        "<strong>Julio's Lagos</strong><br>Praceta João da Costa Reis, 8600-315 Lagos" +
+        '<br><a href="https://maps.app.goo.gl/KJktdeved2WiD9Fr7" target="_blank" rel="noopener">' +
+        t("visit.popup.directions") +
+        "</a>";
+    } else {
+      html =
+        "<strong>Julio's</strong><br>Avenida Elias Garcia, 19B, 1000-147 " +
+        (currentLang === "pt" ? "Lisboa" : "Lisbon") +
+        '<br><a href="https://www.google.com/maps/search/?api=1&query=38.7394912,-9.1441767" target="_blank" rel="noopener">' +
+        t("visit.popup.directions") +
+        "</a>";
+    }
     mapMarker.bindPopup(html);
   }
 
@@ -745,45 +901,75 @@
     var script = document.getElementById("schema-restaurant");
     if (!script) return;
 
-    var schema = {
-      "@context": "https://schema.org",
-      "@type": "Restaurant",
-      name: "Julio's",
-      image: SITE_URL + "/img/IMG_20260221_204051.png",
-      url: SITE_URL + "/",
-      telephone: "+351916475896",
-      priceRange: "€€",
-      servesCuisine: ["Portuguese", "International", "Tapas"],
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Avenida Elias Garcia, 19B",
-        addressLocality: "Lisboa",
-        postalCode: "1000-147",
-        addressCountry: "PT"
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 38.7394912,
-        longitude: -9.1441767
-      },
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: "12:00",
-          closes: "00:00"
+    var schema;
+    if (isLagosLocation()) {
+      schema = {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        name: "Julio's Lagos",
+        image: SITE_URL + "/img/lagos/exterior-1.png",
+        url: SITE_URL + "/lagos/",
+        telephone: "+351916475896",
+        priceRange: "€€",
+        servesCuisine: ["Portuguese", "Seafood", "Mediterranean"],
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Praceta João da Costa Reis",
+          addressLocality: "Lagos",
+          postalCode: "8600-315",
+          addressRegion: "Algarve",
+          addressCountry: "PT"
         },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Saturday",
-          opens: "18:00",
-          closes: "00:00"
-        }
-      ],
-      description: t("meta.index.description"),
-      inLanguage: [currentLang === "pt" ? "pt-PT" : "en-GB"],
-      sameAs: ["https://julios.pt"]
-    };
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 37.1069131,
+          longitude: -8.6804093
+        },
+        description: t("meta.lagos.description"),
+        inLanguage: [currentLang === "pt" ? "pt-PT" : "en-GB"],
+        sameAs: ["https://julios.pt"]
+      };
+    } else {
+      schema = {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        name: "Julio's",
+        image: SITE_URL + "/img/IMG_20260221_204051.png",
+        url: SITE_URL + "/",
+        telephone: "+351916475896",
+        priceRange: "€€",
+        servesCuisine: ["Portuguese", "International", "Tapas"],
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Avenida Elias Garcia, 19B",
+          addressLocality: "Lisboa",
+          postalCode: "1000-147",
+          addressCountry: "PT"
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 38.7394912,
+          longitude: -9.1441767
+        },
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            opens: "12:00",
+            closes: "00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: "Saturday",
+            opens: "18:00",
+            closes: "00:00"
+          }
+        ],
+        description: t("meta.index.description"),
+        inLanguage: [currentLang === "pt" ? "pt-PT" : "en-GB"],
+        sameAs: ["https://julios.pt"]
+      };
+    }
 
     script.textContent = JSON.stringify(schema);
   }
@@ -797,6 +983,9 @@
     applyTranslations();
     var page = document.body.getAttribute("data-page") || "index";
     updateMeta(page);
+    if (global.JuliosMenu && typeof global.JuliosMenu.render === "function") {
+      global.JuliosMenu.render(currentLang);
+    }
   }
 
   function bindLangSwitcher() {
@@ -833,7 +1022,11 @@
         }
       }
 
-      var template = t("reservations.whatsapp");
+      var templateKey =
+        document.body.getAttribute("data-location") === "lagos"
+          ? "reservations.whatsapp.lagos"
+          : "reservations.whatsapp";
+      var template = t(templateKey);
       var message = template
         .replace("{name}", name)
         .replace("{phone}", phone)
@@ -878,6 +1071,9 @@
     bindPromoButtons();
     applyTranslations();
     updateMeta(options.page || "index");
+    if (global.JuliosMenu && typeof global.JuliosMenu.render === "function") {
+      global.JuliosMenu.render(currentLang);
+    }
 
     if (typeof options.onMapReady === "function") {
       options.onMapReady(registerMapMarker);

@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Julio's Lagos — Restaurante no Algarve</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      id="meta-description"
+      content="Julio's Lagos — petiscos, peixe grelhado, arroz de marisco e paella num espaço de amizade e boa mesa. Reserva por WhatsApp."
+    />
+    <meta name="author" content="Julio's" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#c38a4b" />
+    <link rel="canonical" id="canonical-link" href="https://julios.pt/lagos/" />
+    <link rel="alternate" hreflang="pt-PT" href="https://julios.pt/lagos/" />
+    <link rel="alternate" hreflang="en-GB" href="https://julios.pt/lagos/?lang=en" />
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:site_name" content="Julio's" />
+    <meta property="og:title" id="og-title" content="Julio's Lagos — Restaurante no Algarve" />
+    <meta
+      property="og:description"
+      id="og-description"
+      content="Julio's Lagos — petiscos, peixe grelhado, arroz de marisco e paella num espaço de amizade e boa mesa. Reserva por WhatsApp."
+    />
+    <meta property="og:url" content="https://julios.pt/lagos/" />
+    <meta property="og:image" content="https://julios.pt/img/lagos/exterior-1.png" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="twitter-title" content="Julio's Lagos — Restaurante no Algarve" />
+    <meta
+      name="twitter:description"
+      id="twitter-description"
+      content="Julio's Lagos — petiscos, peixe grelhado, arroz de marisco e paella num espaço de amizade e boa mesa."
+    />
+    <meta name="twitter:image" content="https://julios.pt/img/lagos/exterior-1.png" />
+    <script type="application/ld+json" id="schema-restaurant"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f8f4ef;
+        --accent: #c38a4b;
+        --dark: #1f1b1a;
+        --text: #3c3230;
+        --muted: #8b7a74;
+        --max-width: 1100px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 2000;
+        background: rgba(248, 244, 239, 0.96);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #e1d6c9;
+      }
+
+      .nav {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 1rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.7rem;
+        letter-spacing: 0.08em;
+      }
+
+      .logo span {
+        color: var(--accent);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      .nav-links a {
+        position: relative;
+        padding-bottom: 0.2rem;
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: var(--accent);
+        transition: width 0.2s ease-out;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .lang-switcher,
+      .loc-switcher {
+        display: inline-flex;
+        border: 1px solid #e1d6c9;
+        border-radius: 999px;
+        overflow: hidden;
+        background: white;
+      }
+
+      .lang-btn {
+        border: none;
+        background: transparent;
+        color: var(--muted);
+        font: inherit;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        padding: 0.45rem 0.65rem;
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease;
+      }
+
+      .lang-btn.active {
+        background: var(--accent);
+        color: white;
+      }
+
+      .lang-btn:hover:not(.active) {
+        color: var(--text);
+      }
+
+      .loc-btn {
+        border: none;
+        background: transparent;
+        color: var(--muted);
+        font: inherit;
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 0.45rem 0.7rem;
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease;
+      }
+
+      .loc-btn.active {
+        background: var(--dark);
+        color: white;
+      }
+
+      .loc-btn:hover:not(.active) {
+        color: var(--text);
+      }
+
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7rem 1.6rem;
+        border-radius: 999px;
+        border: none;
+        background: var(--accent);
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        cursor: pointer;
+        transition: transform 0.15s ease-out, box-shadow 0.15s ease-out,
+          background 0.15s ease-out;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+      }
+
+      .btn-primary:hover {
+        background: #a86f31;
+        transform: translateY(-1px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+      }
+
+      main {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 1.5rem 4rem;
+      }
+
+      .intro-hero {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        overflow: hidden;
+      }
+
+      .intro-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+
+      .intro-slide {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .intro-bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(
+          to bottom,
+          rgba(31, 27, 26, 0.35),
+          rgba(31, 27, 26, 0.55)
+        );
+        pointer-events: none;
+      }
+
+      .intro-content {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        padding: 2rem;
+        max-width: 1100px;
+        width: 100%;
+      }
+
+      .intro-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.8rem, 8vw, 6rem);
+        line-height: 0.95;
+        letter-spacing: 0.02em;
+        text-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        margin-bottom: 0.6rem;
+      }
+
+      .intro-sub {
+        font-size: 1rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 1rem;
+      }
+
+      .intro-cta {
+        margin-top: 1rem;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+        gap: 3rem;
+        padding: 3rem 0 4rem;
+        align-items: center;
+      }
+
+      .hero-tagline {
+        font-size: 0.9rem;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 0.6rem;
+      }
+
+      .hero-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.4rem, 4vw, 3rem);
+        line-height: 1.1;
+        margin-bottom: 1.2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+        max-width: 26rem;
+        margin-bottom: 1.8rem;
+        color: var(--muted);
+      }
+
+      .hero-meta {
+        margin-top: 1.4rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--muted);
+      }
+
+      .hero-meta span {
+        display: inline-block;
+        margin-right: 1.2rem;
+      }
+
+      .hero-photo-grid {
+        border-radius: 1.8rem;
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: 2fr 1.4fr;
+        gap: 0.5rem;
+        box-shadow: 0 24px 40px rgba(0, 0, 0, 0.25);
+      }
+
+      .hero-main-photo {
+        position: relative;
+        overflow: hidden;
+        min-height: 240px;
+      }
+
+      .hero-main-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.04);
+      }
+
+      .hero-strip {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+      }
+
+      .hero-strip img {
+        width: 100%;
+        height: 100%;
+        min-height: 100px;
+        object-fit: cover;
+        filter: brightness(0.96);
+      }
+
+      .section {
+        padding: 3rem 0;
+        border-top: 1px solid #e1d6c9;
+      }
+
+      .section-header {
+        margin-bottom: 1.8rem;
+      }
+
+      .section-kicker {
+        font-size: 0.75rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 0.3rem;
+      }
+
+      .section-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.7rem;
+      }
+
+      .section-lead {
+        font-size: 0.95rem;
+        max-width: 32rem;
+        color: var(--muted);
+        margin-top: 0.5rem;
+      }
+
+      .about-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.9fr);
+        gap: 2.5rem;
+        align-items: start;
+      }
+
+      .about-photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem;
+        margin-bottom: 1.4rem;
+        border-radius: 1.2rem;
+        overflow: hidden;
+      }
+
+      .about-photos img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+
+      .about-text p {
+        margin-bottom: 1rem;
+        font-size: 0.98rem;
+      }
+
+      .owner-card {
+        background: white;
+        padding: 1.8rem 1.6rem;
+        border-radius: 1.4rem;
+        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.16);
+      }
+
+      .owner-label {
+        font-size: 0.75rem;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 0.5rem;
+      }
+
+      .owner-name {
+        font-family: "Playfair Display", serif;
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .owner-role {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        margin-bottom: 0.8rem;
+        color: var(--muted);
+      }
+
+      .owner-card p {
+        font-size: 0.92rem;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .gallery-item {
+        border-radius: 1.3rem;
+        overflow: hidden;
+        background: #f0e5d6;
+        position: relative;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.35s ease-out;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .gallery-caption {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 0.6rem 0.9rem;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+        color: #fff;
+        font-size: 0.85rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .reservation-form-card {
+        background: white;
+        border-radius: 1.4rem;
+        padding: 1.8rem 1.6rem;
+        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.14);
+      }
+
+      .reservation-form-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.35rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .reservation-form-card > p {
+        font-size: 0.92rem;
+        color: var(--muted);
+        margin-bottom: 1.4rem;
+      }
+
+      .reservation-form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem 1.2rem;
+      }
+
+      .form-field {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+      }
+
+      .form-field label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: var(--muted);
+      }
+
+      .form-field input {
+        width: 100%;
+        padding: 0.65rem 0.85rem;
+        border: 1px solid #e1d6c9;
+        border-radius: 0.7rem;
+        font: inherit;
+        font-size: 0.95rem;
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      .form-field input:focus {
+        outline: 2px solid rgba(195, 138, 75, 0.35);
+        border-color: var(--accent);
+      }
+
+      .form-field-full {
+        grid-column: 1 / -1;
+      }
+
+      .reservation-form-actions {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        align-items: center;
+        margin-top: 0.3rem;
+      }
+
+      .btn-whatsapp {
+        background: #25d366;
+        box-shadow: 0 8px 18px rgba(37, 211, 102, 0.28);
+      }
+
+      .btn-whatsapp:hover {
+        background: #1ebe57;
+      }
+
+      .reservation-form-note {
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+
+      .visit-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        gap: 2rem;
+        align-items: start;
+      }
+
+      .visit-block h3 {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-bottom: 0.2rem;
+      }
+
+      .visit-block p {
+        font-size: 0.92rem;
+        color: var(--muted);
+        margin-bottom: 0.6rem;
+      }
+
+      .visit-map {
+        border-radius: 1.4rem;
+        overflow: hidden;
+        background: #ddd;
+        min-height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        color: #666;
+        text-align: center;
+        padding: 1rem;
+        isolation: isolate;
+        position: relative;
+        z-index: 0;
+      }
+
+      .visit-map #visit-map-map {
+        width: 100%;
+        height: 100%;
+        min-height: 220px;
+        z-index: 0;
+      }
+
+      .visit-map .leaflet-container {
+        z-index: 0;
+      }
+
+      .visit-map .leaflet-pane,
+      .visit-map .leaflet-control-container {
+        z-index: auto;
+      }
+
+      .visit-map .leaflet-top,
+      .visit-map .leaflet-bottom {
+        z-index: 1;
+      }
+
+      .menu-cta-wrap {
+        text-align: center;
+      }
+
+      footer {
+        border-top: 1px solid #e1d6c9;
+        padding: 1.4rem 1.5rem 1.8rem;
+        font-size: 0.8rem;
+        color: var(--muted);
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      footer a {
+        text-decoration: underline;
+        text-underline-offset: 0.18em;
+      }
+
+      @media (max-width: 850px) {
+        .hero,
+        .about-layout,
+        .visit-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          padding-top: 2rem;
+        }
+
+        .hero-photo-grid {
+          order: -1;
+        }
+
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .nav-actions {
+          gap: 0.5rem;
+        }
+
+        .nav-actions .btn-primary {
+          padding: 0.6rem 1rem;
+          font-size: 0.78rem;
+        }
+      }
+
+      @media (max-width: 650px) {
+        .reservation-form {
+          grid-template-columns: 1fr;
+        }
+
+        .about-photos {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+  <body data-page="lagos" data-location="lagos">
+    <section class="intro-hero" data-i18n-aria="intro.aria">
+      <div class="intro-bg" id="intro-bg"></div>
+      <div class="intro-content">
+        <div class="intro-sub" data-i18n="lagos.intro.location">Lagos · Algarve</div>
+        <h1 class="intro-title">Julio's</h1>
+        <div class="intro-cta">
+          <a href="#reservas" class="btn-primary" data-i18n="intro.cta">Reservar mesa</a>
+        </div>
+      </div>
+    </section>
+
+    <header>
+      <div class="nav">
+        <a href="index.html" class="logo">Julio<span>'</span>s</a>
+        <nav class="nav-links">
+          <a href="#about" data-i18n="nav.about">Sobre</a>
+          <a href="#gallery" data-i18n="nav.gallery">Sabores</a>
+          <a href="menu.html" data-i18n="nav.menu">Ementa</a>
+          <a href="#reservas" data-i18n="nav.reservations">Reservas</a>
+          <a href="#visit" data-i18n="nav.visit">Visita-nos</a>
+        </nav>
+        <div class="nav-actions">
+          <div class="loc-switcher" role="group" aria-label="Location">
+            <button type="button" class="loc-btn" data-loc="lisboa" aria-pressed="false" data-i18n="loc.lisboa">Lisboa</button>
+            <button type="button" class="loc-btn active" data-loc="lagos" aria-pressed="true" data-i18n="loc.lagos">Lagos</button>
+          </div>
+          <div class="lang-switcher" role="group" aria-label="Language">
+            <button type="button" class="lang-btn active" data-lang="pt" aria-pressed="true">PT</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <a href="#reservas" class="btn-primary" data-i18n="nav.reservations">Reservas</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="hero-tagline" data-i18n="lagos.hero.tagline">Lagos · Algarve</div>
+          <h1 class="hero-title" data-i18n-html="lagos.hero.title">Onde a amizade<br />se senta à mesa.</h1>
+          <p class="hero-subtitle" data-i18n="lagos.hero.subtitle">
+            Boa comida, espírito familiar e aquele sorriso de quem te recebe como se fosses de casa — bem-vindo ao Julio's Lagos.
+          </p>
+          <a href="#reservas" class="btn-primary" data-i18n="hero.cta">Reservar mesa</a>
+          <div class="hero-meta">
+            <span data-i18n="lagos.hero.meta1">PETISCOS &amp; MARISCO</span>
+            <span data-i18n="lagos.hero.meta2">PEIXE GRELHADO</span>
+            <span data-i18n="lagos.hero.meta3">PAELLA &amp; CONVÍVIO</span>
+          </div>
+        </div>
+
+        <div class="hero-photo-grid">
+          <div class="hero-main-photo">
+            <img
+              src="../img/lagos/exterior-1.png"
+              alt="Julio's Lagos"
+            />
+          </div>
+          <div class="hero-strip">
+            <img src="../img/lagos/grilled-fish.png" data-i18n-alt="lagos.gallery.a1" alt="Peixe grelhado" />
+            <img src="../img/lagos/arroz-marisco.png" data-i18n-alt="lagos.gallery.a2" alt="Arroz de marisco" />
+            <img src="../img/lagos/paella.png" data-i18n-alt="lagos.gallery.a3" alt="Paella" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-header">
+          <div class="section-kicker" data-i18n="lagos.about.kicker">Sobre Julio's Lagos</div>
+          <h2 class="section-title" data-i18n="lagos.about.title">Uma mesa que nasceu de uma amizade</h2>
+          <p class="section-lead" data-i18n="lagos.about.lead">
+            O Julio's Lagos é muito mais do que um restaurante — é o sítio onde a amizade, a família e a paixão pela boa gastronomia se sentam lado a lado.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-text">
+            <div class="about-photos">
+              <img src="../img/lagos/exterior-1.png" alt="Exterior do Julio's Lagos" />
+              <img src="../img/lagos/exterior-2.png" alt="Fachada do Julio's Lagos" />
+            </div>
+            <p data-i18n="lagos.about.p1">
+              A história começou muito antes da abertura. Nasceu de uma amizade genuína e de uma visão partilhada: a de que uma boa refeição aproxima famílias, fortalece amizades e cria ligações novas — às vezes até melhores do que qualquer app de networking.
+            </p>
+            <p data-i18n="lagos.about.p2">
+              Entre essas pessoas está o Dr. João Pedro César Machado, co-proprietário e apaixonado por Lagos. Depois de se mudar para a cidade, há mais de dois anos, entrou neste espaço pela primeira vez e viu imediatamente o potencial: ali podia nascer um lugar onde a boa comida, o acolhimento e o espírito familiar fossem os verdadeiros protagonistas.
+            </p>
+            <p data-i18n="lagos.about.p3">
+              Com perseverança, dedicação e o apoio de amigos e familiares, a visão tornou-se realidade. Assim nasceu o Julio's Lagos — com os mesmos valores que estiveram na origem: proximidade, autenticidade, respeito pelas pessoas e amor pela gastronomia.
+            </p>
+            <p data-i18n="lagos.about.p4">
+              Aqui cada cliente deve sentir-se em casa. Gostamos de receber quem nos visita como recebemos os nossos amigos. Muitos chegam como clientes e regressam como amigos — e isso, francamente, é o melhor feedback que um restaurante pode ter.
+            </p>
+            <p data-i18n="lagos.about.p5">
+              A nossa cozinha mistura tradições e sabores do mundo: peixe grelhado, arroz de marisco, paella, petiscos e pratos preparados com ingredientes selecionados, atenção ao detalhe e, acima de tudo, paixão. Mais do que servir refeições, queremos proporcionar experiências — à mesa, exatamente onde a amizade se senta.
+            </p>
+          </div>
+
+          <aside class="owner-card">
+            <div class="owner-label" data-i18n="lagos.owner.label">Co-proprietário</div>
+            <div class="owner-name">Dr. João Pedro César Machado</div>
+            <div class="owner-role" data-i18n="lagos.owner.role">Co-proprietário de Julio's Lagos</div>
+            <p data-i18n="lagos.owner.bio">
+              Apaixonado por Lagos e pela sua atmosfera única, o Dr. João Pedro César Machado acreditou neste espaço desde o primeiro dia — e ajudou a transformar essa visão numa mesa à qual todos são bem-vindos.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="section-header">
+          <div class="section-kicker" data-i18n="lagos.gallery.kicker">Sabores de Lagos</div>
+          <h2 class="section-title" data-i18n="lagos.gallery.title">Do peixe à paella</h2>
+          <p class="section-lead" data-i18n="lagos.gallery.lead">
+            Peixe grelhado, arroz de marisco generoso e paella para partilhar — a carta do Julio's Lagos celebra o mar e a mesa.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img
+              src="../img/lagos/grilled-fish.png"
+              data-i18n-alt="lagos.gallery.a1"
+              alt="Peixe grelhado no Julio's Lagos"
+            />
+            <figcaption class="gallery-caption" data-i18n="lagos.gallery.c1">Peixe Grelhado</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="../img/lagos/arroz-marisco.png"
+              data-i18n-alt="lagos.gallery.a2"
+              alt="Arroz de marisco no Julio's Lagos"
+            />
+            <figcaption class="gallery-caption" data-i18n="lagos.gallery.c2">Arroz de Marisco</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="../img/lagos/paella.png"
+              data-i18n-alt="lagos.gallery.a3"
+              alt="Paella no Julio's Lagos"
+            />
+            <figcaption class="gallery-caption" data-i18n="lagos.gallery.c3">Paella</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="reservas" class="section">
+        <div class="section-header">
+          <div class="section-kicker" data-i18n="reservations.kicker">Reservas</div>
+          <h2 class="section-title" data-i18n="reservations.title">Reserva a tua mesa</h2>
+          <p class="section-lead" data-i18n="reservations.lead">
+            Preenche os dados abaixo e envia o pedido diretamente por WhatsApp. Confirmamos a disponibilidade o mais rápido possível.
+          </p>
+        </div>
+
+        <div class="reservation-form-card">
+          <h3 data-i18n="reservations.form.title">Pedido de reserva</h3>
+          <p data-i18n="reservations.form.intro">
+            Indica a data, hora e número de pessoas. Para grupos com mais de 10 pessoas, menciona-o na mensagem.
+          </p>
+
+          <form class="reservation-form" id="reservation-form">
+            <div class="form-field">
+              <label for="res-name" data-i18n="reservations.form.name">Nome</label>
+              <input
+                type="text"
+                id="res-name"
+                name="name"
+                required
+                autocomplete="name"
+                data-i18n-placeholder="reservations.form.namePh"
+                placeholder="O teu nome"
+              />
+            </div>
+            <div class="form-field">
+              <label for="res-phone" data-i18n="reservations.form.phone">Telefone</label>
+              <input
+                type="tel"
+                id="res-phone"
+                name="phone"
+                required
+                autocomplete="tel"
+                data-i18n-placeholder="reservations.form.phonePh"
+                placeholder="+351 900 000 000"
+              />
+            </div>
+            <div class="form-field">
+              <label for="res-date" data-i18n="reservations.form.date">Data</label>
+              <input type="date" id="res-date" name="date" required />
+            </div>
+            <div class="form-field">
+              <label for="res-time" data-i18n="reservations.form.time">Hora</label>
+              <input type="time" id="res-time" name="time" required />
+            </div>
+            <div class="form-field form-field-full">
+              <label for="res-guests" data-i18n="reservations.form.guests">Número de pessoas</label>
+              <input
+                type="number"
+                id="res-guests"
+                name="guests"
+                min="1"
+                max="50"
+                required
+                data-i18n-placeholder="reservations.form.guestsPh"
+                placeholder="Ex.: 4"
+              />
+            </div>
+            <div class="reservation-form-actions">
+              <button type="submit" class="btn-primary btn-whatsapp" data-i18n="reservations.form.submit">
+                Enviar por WhatsApp
+              </button>
+              <span class="reservation-form-note" data-i18n="reservations.form.note">
+                Serás redirecionado para o WhatsApp com a mensagem pronta.
+              </span>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="visit" class="section">
+        <div class="section-header">
+          <div class="section-kicker" data-i18n="visit.kicker">Visita-nos</div>
+          <h2 class="section-title" data-i18n="lagos.visit.title">Julio's · Lagos</h2>
+        </div>
+
+        <div class="visit-grid">
+          <div>
+            <div class="visit-block">
+              <h3 data-i18n="visit.address.label">Morada</h3>
+              <p>
+                <span data-i18n-html="lagos.visit.address"
+                  >Praceta João da Costa Reis<br />8600-315 Lagos · Algarve</span
+                ><br />
+                <a
+                  href="https://maps.app.goo.gl/KJktdeved2WiD9Fr7"
+                  target="_blank"
+                  rel="noopener"
+                  data-i18n="visit.directions"
+                  >Como chegar</a
+                >
+              </p>
+            </div>
+
+            <div class="visit-block">
+              <h3 data-i18n="visit.hours.label">Horário</h3>
+              <p data-i18n-html="lagos.visit.hours">
+                Segunda: 12h00–00h00<br />Terça: Encerrado<br />Quarta: 12h00–00h30<br />Quinta e
+                Sexta: 12h00–00h00<br />Sábado: 12h00–01h30<br />Domingo: 12h00–00h00
+              </p>
+            </div>
+
+            <div class="visit-block">
+              <h3 data-i18n="visit.contact.label">Contacto</h3>
+              <p>
+                <a href="tel:+351916475896">+351 916 475 896</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="visit-map" id="visit-map">
+            <div
+              id="visit-map-map"
+              data-i18n-aria="lagos.visit.map.aria"
+              aria-label="Mapa — Julio's em Lagos"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ementa" class="section">
+        <div class="section-header">
+          <div class="section-kicker" data-i18n="menuSection.kicker">Ementa</div>
+          <h2 class="section-title" data-i18n="menuSection.title">Descobre a nossa gastronomia</h2>
+          <p class="section-lead" data-i18n="lagos.menuPage.lead">
+            Tábuas, petiscos, saladas, pratos principais e sobremesas — a carta do Julio's Lagos.
+          </p>
+        </div>
+        <div class="menu-cta-wrap">
+          <a href="menu.html" class="btn-primary" data-i18n="menuSection.cta">Consultar Ementa</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div data-i18n="footer.copy">© Julio's · Lisboa &amp; Lagos</div>
+      <div>
+        <a href="../legal.html#privacidade" data-i18n="footer.privacy">Política de Privacidade</a> ·
+        <a href="../legal.html#termos" data-i18n="footer.terms">Termos &amp; Condições</a>
+      </div>
+    </footer>
+
+    <script src="../js/location.js?v=20260808"></script>
+    <script src="../js/i18n.js?v=20260808"></script>
+    <script>JuliosI18n.init({ page: "lagos" });</script>
+
+    <script>
+      (function () {
+        var images = [
+          "../img/lagos/paella.png",
+          "../img/lagos/arroz-marisco.png",
+          "../img/lagos/grilled-fish.png",
+          "../img/lagos/exterior-1.png"
+        ];
+
+        var container = document.getElementById("intro-bg");
+        if (!container) return;
+
+        container.innerHTML =
+          '<div class="intro-slide" id="slideA"></div><div class="intro-slide" id="slideB"></div>';
+        var a = document.getElementById("slideA");
+        var b = document.getElementById("slideB");
+
+        function preload(src) {
+          var i = new Image();
+          i.src = src;
+        }
+        images.forEach(preload);
+
+        var current = 0;
+        a.style.backgroundImage = "url('" + images[0] + "')";
+        a.style.opacity = 1;
+
+        setInterval(function () {
+          var next = (current + 1) % images.length;
+          var incoming = current % 2 === 0 ? b : a;
+          var outgoing = current % 2 === 0 ? a : b;
+          incoming.style.backgroundImage = "url('" + images[next] + "')";
+          incoming.style.opacity = 1;
+          outgoing.style.opacity = 0;
+          current = next;
+        }, 4500);
+      })();
+    </script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      (function () {
+        var lat = 37.1069131,
+          lng = -8.6804093;
+
+        var map = L.map("visit-map-map", { scrollWheelZoom: false }).setView([lat, lng], 17);
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19,
+          attribution: "&copy; OpenStreetMap contributors"
+        }).addTo(map);
+
+        var marker = L.marker([lat, lng]).addTo(map);
+        JuliosI18n.registerMapMarker(marker);
+      })();
+    </script>
+  </body>
+</html>

@@ -172,6 +172,37 @@
         color: var(--text);
       }
 
+      .loc-switcher {
+        display: inline-flex;
+        border: 1px solid #e1d6c9;
+        border-radius: 999px;
+        overflow: hidden;
+        background: white;
+      }
+
+      .loc-btn {
+        border: none;
+        background: transparent;
+        color: var(--muted);
+        font: inherit;
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 0.45rem 0.7rem;
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease;
+      }
+
+      .loc-btn.active {
+        background: var(--dark);
+        color: white;
+      }
+
+      .loc-btn:hover:not(.active) {
+        color: var(--text);
+      }
+
       .btn-primary {
         display: inline-flex;
         align-items: center;
@@ -918,6 +949,10 @@
           <a href="#visit" data-i18n="nav.visit">Visita-nos</a>
         </nav>
         <div class="nav-actions">
+          <div class="loc-switcher" role="group" aria-label="Location">
+            <button type="button" class="loc-btn active" data-loc="lisboa" aria-pressed="true" data-i18n="loc.lisboa">Lisboa</button>
+            <button type="button" class="loc-btn" data-loc="lagos" aria-pressed="false" data-i18n="loc.lagos">Lagos</button>
+          </div>
           <div class="lang-switcher" role="group" aria-label="Language">
             <button type="button" class="lang-btn active" data-lang="pt" aria-pressed="true">PT</button>
             <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
@@ -1324,7 +1359,8 @@
       </div>
     </footer>
 
-    <script src="js/i18n.js?v=20260626"></script>
+    <script src="js/location.js?v=20260808"></script>
+    <script src="js/i18n.js?v=20260808"></script>
     <script>JuliosI18n.init({ page: "index" });</script>
 
     <!-- Leaflet JS -->
